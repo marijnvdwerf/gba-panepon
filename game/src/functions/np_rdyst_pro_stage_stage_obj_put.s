@@ -1,0 +1,4 @@
+	thumb_func_start np_rdyst_pro_stage_stage_obj_put
+np_rdyst_pro_stage_stage_obj_put:
+	bx	lr
+	thumb_func_end np_rdyst_pro_stage_stage_obj_put
