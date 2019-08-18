@@ -1468,7 +1468,86 @@ GLV_ED_DojiSTm_doji30:
 
     .global GLV_ED_DojiSTime
 GLV_ED_DojiSTime:
-    baserom 0x16890, 0x140
+    .4byte GLV_ED_DojiSTm_doji00
+    .4byte GLV_ED_DojiSTm_doji00
+    .4byte GLV_ED_DojiSTm_doji00
+    .4byte GLV_ED_DojiSTm_doji00
+    .4byte GLV_ED_DojiSTm_doji04
+    .4byte GLV_ED_DojiSTm_doji05
+    .4byte GLV_ED_DojiSTm_doji06
+    .4byte GLV_ED_DojiSTm_doji07
+    .4byte GLV_ED_DojiSTm_doji08
+    .4byte GLV_ED_DojiSTm_doji09
+    .4byte GLV_ED_DojiSTm_doji10
+    .4byte GLV_ED_DojiSTm_doji11
+    .4byte GLV_ED_DojiSTm_doji12
+    .4byte GLV_ED_DojiSTm_doji13
+    .4byte GLV_ED_DojiSTm_doji14
+    .4byte GLV_ED_DojiSTm_doji15
+    .4byte GLV_ED_DojiSTm_doji16
+    .4byte GLV_ED_DojiSTm_doji17
+    .4byte GLV_ED_DojiSTm_doji18
+    .4byte GLV_ED_DojiSTm_doji19
+    .4byte GLV_ED_DojiSTm_doji20
+    .4byte GLV_ED_DojiSTm_doji21
+    .4byte GLV_ED_DojiSTm_doji22
+    .4byte GLV_ED_DojiSTm_doji23
+    .4byte GLV_ED_DojiSTm_doji24
+    .4byte GLV_ED_DojiSTm_doji25
+    .4byte GLV_ED_DojiSTm_doji26
+    .4byte GLV_ED_DojiSTm_doji27
+    .4byte GLV_ED_DojiSTm_doji28
+    .4byte GLV_ED_DojiSTm_doji29
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
+    .4byte GLV_ED_DojiSTm_doji30
 
     .global GLV_ED_RensaSTim_chain00
 GLV_ED_RensaSTim_chain00:
@@ -1524,7 +1603,27 @@ GLV_ED_RensaSTim_chain13:
 
     .global GLV_ED_RensaSTime
 GLV_ED_RensaSTime:
-    baserom 0x16A20, 0x54
+    .4byte GLV_ED_RensaSTim_chain00
+    .4byte GLV_ED_RensaSTim_chain00
+    .4byte GLV_ED_RensaSTim_chain02
+    .4byte GLV_ED_RensaSTim_chain03
+    .4byte GLV_ED_RensaSTim_chain04
+    .4byte GLV_ED_RensaSTim_chain05
+    .4byte GLV_ED_RensaSTim_chain06
+    .4byte GLV_ED_RensaSTim_chain07
+    .4byte GLV_ED_RensaSTim_chain08
+    .4byte GLV_ED_RensaSTim_chain09
+    .4byte GLV_ED_RensaSTim_chain10
+    .4byte GLV_ED_RensaSTim_chain11
+    .4byte GLV_ED_RensaSTim_chain12
+    .4byte GLV_ED_RensaSTim_chain13
+    .4byte GLV_ED_RensaSTim_chain13
+    .4byte GLV_ED_RensaSTim_chain13
+    .4byte GLV_ED_RensaSTim_chain13
+    .4byte GLV_ED_RensaSTim_chain13
+    .4byte GLV_ED_RensaSTim_chain13
+    .4byte GLV_ED_RensaSTim_chain13
+    .4byte GLV_ED_RensaSTim_chain13
 
     .global GLV_ED_DangerDojiSTim_doji00
 GLV_ED_DangerDojiSTim_doji00:
@@ -1548,7 +1647,86 @@ GLV_ED_DangerDojiSTim_doji16:
 
     .global GLV_ED_DangerDojiSTime
 GLV_ED_DangerDojiSTime:
-    baserom 0x16A94, 0x140
+    .4byte GLV_ED_DangerDojiSTim_doji00
+    .4byte GLV_ED_DangerDojiSTim_doji00
+    .4byte GLV_ED_DangerDojiSTim_doji00
+    .4byte GLV_ED_DangerDojiSTim_doji00
+    .4byte GLV_ED_DangerDojiSTim_doji04
+    .4byte GLV_ED_DangerDojiSTim_doji04
+    .4byte GLV_ED_DangerDojiSTim_doji04
+    .4byte GLV_ED_DangerDojiSTim_doji04
+    .4byte GLV_ED_DangerDojiSTim_doji04
+    .4byte GLV_ED_DangerDojiSTim_doji09
+    .4byte GLV_ED_DangerDojiSTim_doji09
+    .4byte GLV_ED_DangerDojiSTim_doji11
+    .4byte GLV_ED_DangerDojiSTim_doji11
+    .4byte GLV_ED_DangerDojiSTim_doji11
+    .4byte GLV_ED_DangerDojiSTim_doji11
+    .4byte GLV_ED_DangerDojiSTim_doji11
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
+    .4byte GLV_ED_DangerDojiSTim_doji16
 
     .global GLV_ED_DangerRensaSTim_chain00
 GLV_ED_DangerRensaSTim_chain00:
@@ -1572,7 +1750,27 @@ GLV_ED_DangerRensaSTim_chain05:
 
     .global GLV_ED_DangerRensaSTime
 GLV_ED_DangerRensaSTime:
-    baserom 0x16BF4, 0x54
+    .4byte GLV_ED_DangerRensaSTim_chain00
+    .4byte GLV_ED_DangerRensaSTim_chain00
+    .4byte GLV_ED_DangerRensaSTim_chain02
+    .4byte GLV_ED_DangerRensaSTim_chain03
+    .4byte GLV_ED_DangerRensaSTim_chain04
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
+    .4byte GLV_ED_DangerRensaSTim_chain05
 
     .global GLV_ST_FlashNum
 GLV_ST_FlashNum:
@@ -1620,7 +1818,12 @@ sm_strtspl_rnd6:
 
     .global GLV_ST_StartSpeed
 GLV_ST_StartSpeed:
-    baserom 0x16C8C, 0x18
+    .4byte sm_strtspl_rnd1
+    .4byte sm_strtspl_rnd2
+    .4byte sm_strtspl_rnd3
+    .4byte sm_strtspl_rnd4
+    .4byte sm_strtspl_rnd5
+    .4byte sm_strtspl_rnd6
 
     .global sm_pnlkind_rnd1
 sm_pnlkind_rnd1:
@@ -1632,7 +1835,12 @@ sm_pnlkind_rnd4:
 
     .global GLV_ST_Kind
 GLV_ST_Kind:
-    baserom 0x16CB0, 0x18
+    .4byte sm_pnlkind_rnd1
+    .4byte sm_pnlkind_rnd1
+    .4byte sm_pnlkind_rnd1
+    .4byte sm_pnlkind_rnd4
+    .4byte sm_pnlkind_rnd4
+    .4byte sm_pnlkind_rnd4
 
     .global sm_initpnls_rnd1
 sm_initpnls_rnd1:
@@ -1652,7 +1860,12 @@ sm_initpnls_rnd4:
 
     .global GLV_ST_StartPanel
 GLV_ST_StartPanel:
-    baserom 0x16CDC, 0x18
+    .4byte sm_initpnls_rnd1
+    .4byte sm_initpnls_rnd2
+    .4byte sm_initpnls_rnd3
+    .4byte sm_initpnls_rnd4
+    .4byte sm_initpnls_rnd3
+    .4byte sm_initpnls_rnd4
 
     .global sm_clrline_rnd1
 sm_clrline_rnd1:
@@ -1680,7 +1893,12 @@ sm_clrline_rnd6:
 
     .global GLV_ST_ClearLine
 GLV_ST_ClearLine:
-    baserom 0x16D14, 0x18
+    .4byte sm_clrline_rnd1
+    .4byte sm_clrline_rnd2
+    .4byte sm_clrline_rnd3
+    .4byte sm_clrline_rnd4
+    .4byte sm_clrline_rnd5
+    .4byte sm_clrline_rnd6
 
     .global GLV_ST_LevelUp
 GLV_ST_LevelUp:
@@ -1800,7 +2018,86 @@ GLV_ST_DojiSTim_doji30:
 
     .global GLV_ST_DojiSTime
 GLV_ST_DojiSTime:
-    baserom 0x16F7C, 0x140
+    .4byte GLV_ST_DojiSTim_doji03
+    .4byte GLV_ST_DojiSTim_doji03
+    .4byte GLV_ST_DojiSTim_doji03
+    .4byte GLV_ST_DojiSTim_doji03
+    .4byte GLV_ST_DojiSTim_doji04
+    .4byte GLV_ST_DojiSTim_doji05
+    .4byte GLV_ST_DojiSTim_doji06
+    .4byte GLV_ST_DojiSTim_doji07
+    .4byte GLV_ST_DojiSTim_doji08
+    .4byte GLV_ST_DojiSTim_doji09
+    .4byte GLV_ST_DojiSTim_doji10
+    .4byte GLV_ST_DojiSTim_doji11
+    .4byte GLV_ST_DojiSTim_doji12
+    .4byte GLV_ST_DojiSTim_doji13
+    .4byte GLV_ST_DojiSTim_doji14
+    .4byte GLV_ST_DojiSTim_doji15
+    .4byte GLV_ST_DojiSTim_doji16
+    .4byte GLV_ST_DojiSTim_doji17
+    .4byte GLV_ST_DojiSTim_doji18
+    .4byte GLV_ST_DojiSTim_doji19
+    .4byte GLV_ST_DojiSTim_doji20
+    .4byte GLV_ST_DojiSTim_doji21
+    .4byte GLV_ST_DojiSTim_doji22
+    .4byte GLV_ST_DojiSTim_doji23
+    .4byte GLV_ST_DojiSTim_doji24
+    .4byte GLV_ST_DojiSTim_doji25
+    .4byte GLV_ST_DojiSTim_doji26
+    .4byte GLV_ST_DojiSTim_doji27
+    .4byte GLV_ST_DojiSTim_doji28
+    .4byte GLV_ST_DojiSTim_doji29
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
+    .4byte GLV_ST_DojiSTim_doji30
 
     .global GLV_ST_RensaSTim_chain00
 GLV_ST_RensaSTim_chain00:
@@ -1856,7 +2153,27 @@ GLV_ST_RensaSTim_chain13:
 
     .global GLV_ST_RensaSTime
 GLV_ST_RensaSTime:
-    baserom 0x17174, 0x54
+    .4byte GLV_ST_RensaSTim_chain00
+    .4byte GLV_ST_RensaSTim_chain00
+    .4byte GLV_ST_RensaSTim_chain02
+    .4byte GLV_ST_RensaSTim_chain03
+    .4byte GLV_ST_RensaSTim_chain04
+    .4byte GLV_ST_RensaSTim_chain05
+    .4byte GLV_ST_RensaSTim_chain06
+    .4byte GLV_ST_RensaSTim_chain07
+    .4byte GLV_ST_RensaSTim_chain08
+    .4byte GLV_ST_RensaSTim_chain09
+    .4byte GLV_ST_RensaSTim_chain10
+    .4byte GLV_ST_RensaSTim_chain11
+    .4byte GLV_ST_RensaSTim_chain12
+    .4byte GLV_ST_RensaSTim_chain13
+    .4byte GLV_ST_RensaSTim_chain13
+    .4byte GLV_ST_RensaSTim_chain13
+    .4byte GLV_ST_RensaSTim_chain13
+    .4byte GLV_ST_RensaSTim_chain13
+    .4byte GLV_ST_RensaSTim_chain13
+    .4byte GLV_ST_RensaSTim_chain13
+    .4byte GLV_ST_RensaSTim_chain13
 
     .global GLV_ST_DangerDojiSTim_doji03
 GLV_ST_DangerDojiSTim_doji03:
@@ -1880,7 +2197,86 @@ GLV_ST_DangerDojiSTim_doji16:
 
     .global GLV_ST_DangerDojiSTime
 GLV_ST_DangerDojiSTime:
-    baserom 0x17210, 0x140
+    .4byte GLV_ST_DangerDojiSTim_doji03
+    .4byte GLV_ST_DangerDojiSTim_doji03
+    .4byte GLV_ST_DangerDojiSTim_doji03
+    .4byte GLV_ST_DangerDojiSTim_doji03
+    .4byte GLV_ST_DangerDojiSTim_doji04
+    .4byte GLV_ST_DangerDojiSTim_doji04
+    .4byte GLV_ST_DangerDojiSTim_doji04
+    .4byte GLV_ST_DangerDojiSTim_doji04
+    .4byte GLV_ST_DangerDojiSTim_doji04
+    .4byte GLV_ST_DangerDojiSTim_doji09
+    .4byte GLV_ST_DangerDojiSTim_doji09
+    .4byte GLV_ST_DangerDojiSTim_doji11
+    .4byte GLV_ST_DangerDojiSTim_doji11
+    .4byte GLV_ST_DangerDojiSTim_doji11
+    .4byte GLV_ST_DangerDojiSTim_doji11
+    .4byte GLV_ST_DangerDojiSTim_doji11
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
+    .4byte GLV_ST_DangerDojiSTim_doji16
 
     .global GLV_ST_DangerRensaSTim_chain00
 GLV_ST_DangerRensaSTim_chain00:
@@ -1904,7 +2300,27 @@ GLV_ST_DangerRensaSTim_chain05:
 
     .global GLV_ST_DangerRensaSTime
 GLV_ST_DangerRensaSTime:
-    baserom 0x17398, 0x54
+    .4byte GLV_ST_DangerRensaSTim_chain00
+    .4byte GLV_ST_DangerRensaSTim_chain00
+    .4byte GLV_ST_DangerRensaSTim_chain02
+    .4byte GLV_ST_DangerRensaSTim_chain03
+    .4byte GLV_ST_DangerRensaSTim_chain04
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
+    .4byte GLV_ST_DangerRensaSTim_chain05
 
     .global GLV_VSL_Kind
 GLV_VSL_Kind:
@@ -2088,7 +2504,86 @@ GLV_VS_DojiSTim_doji30:
 
     .global GLV_VS_DojiSTime
 GLV_VS_DojiSTime:
-    baserom 0x17720, 0x140
+    .4byte GLV_VS_DojiSTim_doji03
+    .4byte GLV_VS_DojiSTim_doji03
+    .4byte GLV_VS_DojiSTim_doji03
+    .4byte GLV_VS_DojiSTim_doji03
+    .4byte GLV_VS_DojiSTim_doji04
+    .4byte GLV_VS_DojiSTim_doji05
+    .4byte GLV_VS_DojiSTim_doji06
+    .4byte GLV_VS_DojiSTim_doji07
+    .4byte GLV_VS_DojiSTim_doji08
+    .4byte GLV_VS_DojiSTim_doji09
+    .4byte GLV_VS_DojiSTim_doji10
+    .4byte GLV_VS_DojiSTim_doji11
+    .4byte GLV_VS_DojiSTim_doji12
+    .4byte GLV_VS_DojiSTim_doji13
+    .4byte GLV_VS_DojiSTim_doji14
+    .4byte GLV_VS_DojiSTim_doji15
+    .4byte GLV_VS_DojiSTim_doji16
+    .4byte GLV_VS_DojiSTim_doji17
+    .4byte GLV_VS_DojiSTim_doji18
+    .4byte GLV_VS_DojiSTim_doji19
+    .4byte GLV_VS_DojiSTim_doji20
+    .4byte GLV_VS_DojiSTim_doji21
+    .4byte GLV_VS_DojiSTim_doji22
+    .4byte GLV_VS_DojiSTim_doji23
+    .4byte GLV_VS_DojiSTim_doji24
+    .4byte GLV_VS_DojiSTim_doji25
+    .4byte GLV_VS_DojiSTim_doji26
+    .4byte GLV_VS_DojiSTim_doji27
+    .4byte GLV_VS_DojiSTim_doji28
+    .4byte GLV_VS_DojiSTim_doji29
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
+    .4byte GLV_VS_DojiSTim_doji30
 
     .global GLV_VS_RensaSTim_chain00
 GLV_VS_RensaSTim_chain00:
@@ -2144,7 +2639,27 @@ GLV_VS_RensaSTim_chain13:
 
     .global GLV_VS_RensaSTime
 GLV_VS_RensaSTime:
-    baserom 0x17964, 0x54
+    .4byte GLV_VS_RensaSTim_chain00
+    .4byte GLV_VS_RensaSTim_chain00
+    .4byte GLV_VS_RensaSTim_chain02
+    .4byte GLV_VS_RensaSTim_chain03
+    .4byte GLV_VS_RensaSTim_chain04
+    .4byte GLV_VS_RensaSTim_chain05
+    .4byte GLV_VS_RensaSTim_chain06
+    .4byte GLV_VS_RensaSTim_chain07
+    .4byte GLV_VS_RensaSTim_chain08
+    .4byte GLV_VS_RensaSTim_chain09
+    .4byte GLV_VS_RensaSTim_chain10
+    .4byte GLV_VS_RensaSTim_chain11
+    .4byte GLV_VS_RensaSTim_chain12
+    .4byte GLV_VS_RensaSTim_chain13
+    .4byte GLV_VS_RensaSTim_chain13
+    .4byte GLV_VS_RensaSTim_chain13
+    .4byte GLV_VS_RensaSTim_chain13
+    .4byte GLV_VS_RensaSTim_chain13
+    .4byte GLV_VS_RensaSTim_chain13
+    .4byte GLV_VS_RensaSTim_chain13
+    .4byte GLV_VS_RensaSTim_chain13
 
     .global GLV_VS_DangerDojiSTim_doji03
 GLV_VS_DangerDojiSTim_doji03:
@@ -2168,7 +2683,86 @@ GLV_VS_DangerDojiSTim_doji16:
 
     .global GLV_VS_DangerDojiSTime
 GLV_VS_DangerDojiSTime:
-    baserom 0x17A1C, 0x140
+    .4byte GLV_VS_DangerDojiSTim_doji03
+    .4byte GLV_VS_DangerDojiSTim_doji03
+    .4byte GLV_VS_DangerDojiSTim_doji03
+    .4byte GLV_VS_DangerDojiSTim_doji03
+    .4byte GLV_VS_DangerDojiSTim_doji04
+    .4byte GLV_VS_DangerDojiSTim_doji04
+    .4byte GLV_VS_DangerDojiSTim_doji04
+    .4byte GLV_VS_DangerDojiSTim_doji04
+    .4byte GLV_VS_DangerDojiSTim_doji04
+    .4byte GLV_VS_DangerDojiSTim_doji09
+    .4byte GLV_VS_DangerDojiSTim_doji09
+    .4byte GLV_VS_DangerDojiSTim_doji11
+    .4byte GLV_VS_DangerDojiSTim_doji11
+    .4byte GLV_VS_DangerDojiSTim_doji11
+    .4byte GLV_VS_DangerDojiSTim_doji11
+    .4byte GLV_VS_DangerDojiSTim_doji11
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
+    .4byte GLV_VS_DangerDojiSTim_doji16
 
     .global GLV_VS_DangerRensaSTim_chain00
 GLV_VS_DangerRensaSTim_chain00:
@@ -2192,7 +2786,27 @@ GLV_VS_DangerRensaSTim_chain05:
 
     .global GLV_VS_DangerRensaSTime
 GLV_VS_DangerRensaSTime:
-    baserom 0x17BC0, 0x54
+    .4byte GLV_VS_DangerRensaSTim_chain00
+    .4byte GLV_VS_DangerRensaSTim_chain00
+    .4byte GLV_VS_DangerRensaSTim_chain02
+    .4byte GLV_VS_DangerRensaSTim_chain03
+    .4byte GLV_VS_DangerRensaSTim_chain04
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
+    .4byte GLV_VS_DangerRensaSTim_chain05
 
     .global PanelInitData
 PanelInitData:
@@ -2412,7 +3026,111 @@ npgmstpnldem_kB13:
 
     .global npgmstpnldem_tbl
 npgmstpnldem_tbl:
-    baserom 0x1B6B8, 0x1A4
+    .word npgmstpnldem_d20
+    .word npgmstpnldem_k20
+    .word np_Msg_SuperDemo_00
+    .word npgmstpnldem_d20
+    .word npgmstpnldem_k21
+    .word np_Msg_SuperDemo_01
+    .word npgmstpnldem_d20
+    .word npgmstpnldem_k22
+    .word np_Msg_SuperDemo_02
+    .word npgmstpnldem_d20
+    .word npgmstpnldem_k23
+    .word np_Msg_SuperDemo_03
+    .word npgmstpnldem_d30
+    .word npgmstpnldem_k30
+    .word np_Msg_SuperDemo_04
+    .word npgmstpnldem_d30
+    .word npgmstpnldem_k31
+    .word np_Msg_SuperDemo_05
+    .word npgmstpnldem_d30
+    .word npgmstpnldem_k32
+    .word np_Msg_SuperDemo_06
+    .word npgmstpnldem_d40
+    .word npgmstpnldem_k40
+    .word np_Msg_SuperDemo_07
+    .word npgmstpnldem_d40
+    .word npgmstpnldem_k41
+    .word np_Msg_SuperDemo_08
+    .word npgmstpnldem_d40
+    .word npgmstpnldem_k42
+    .word np_Msg_SuperDemo_09
+    .word npgmstpnldem_d40
+    .word npgmstpnldem_k43
+    .word np_Msg_SuperDemo_10
+    .word npgmstpnldem_d40
+    .word npgmstpnldem_k44
+    .word np_Msg_SuperDemo_11
+    .word npgmstpnldem_d40
+    .word npgmstpnldem_k45
+    .word np_Msg_SuperDemo_12
+    .word npgmstpnldem_d40
+    .word npgmstpnldem_k46
+    .word np_Msg_SuperDemo_13
+    .word npgmstpnldem_d50
+    .word npgmstpnldem_k50
+    .word np_Msg_SuperDemo_14
+    .word npgmstpnldem_d50
+    .word npgmstpnldem_k51
+    .word np_Msg_SuperDemo_15
+    .word npgmstpnldem_d50
+    .word npgmstpnldem_k52
+    .word np_Msg_SuperDemo_16
+    .word npgmstpnldem_d60
+    .word npgmstpnldem_k60
+    .word np_Msg_SuperDemo_17
+    .word npgmstpnldem_d60
+    .word npgmstpnldem_k61
+    .word np_Msg_SuperDemo_18
+    .word npgmstpnldem_d60
+    .word npgmstpnldem_k62
+    .word np_Msg_SuperDemo_19
+    .word npgmstpnldem_d70
+    .word npgmstpnldem_k70
+    .word np_Msg_SuperDemo_20
+    .word npgmstpnldem_d70
+    .word npgmstpnldem_k71
+    .word np_Msg_SuperDemo_21
+    .word npgmstpnldem_d80
+    .word npgmstpnldem_k80
+    .word np_Msg_SuperDemo_22
+    .word npgmstpnldem_d90
+    .word npgmstpnldem_k90
+    .word np_Msg_SuperDemo_23
+    .word npgmstpnldem_dA0
+    .word npgmstpnldem_kA0
+    .word np_Msg_SuperDemo_24
+    .word npgmstpnldem_dB0
+    .word npgmstpnldem_kB00
+    .word np_Msg_SuperDemo_25
+    .word npgmstpnldem_dB0
+    .word npgmstpnldem_kB01
+    .word np_Msg_SuperDemo_26
+    .word npgmstpnldem_dB0
+    .word npgmstpnldem_kB02
+    .word np_Msg_SuperDemo_27
+    .word npgmstpnldem_dB0
+    .word npgmstpnldem_kB03
+    .word np_Msg_SuperDemo_28
+    .word npgmstpnldem_dB0
+    .word npgmstpnldem_kB05
+    .word np_Msg_SuperDemo_29
+    .word npgmstpnldem_dB1
+    .word npgmstpnldem_kB10
+    .word np_Msg_SuperDemo_30
+    .word npgmstpnldem_dB1
+    .word npgmstpnldem_kB11
+    .word np_Msg_SuperDemo_31
+    .word npgmstpnldem_dB1
+    .word npgmstpnldem_kB12
+    .word np_Msg_SuperDemo_32
+    .word npgmstpnldem_dB0
+    .word npgmstpnldem_kB04
+    .word np_Msg_SuperDemo_33
+    .word npgmstpnldem_dB1
+    .word npgmstpnldem_kB13
+    .word np_Msg_SuperDemo_34
 
     .global Asc_KAZU_v2_gm_logo
 Asc_KAZU_v2_gm_logo:
@@ -2460,7 +3178,16 @@ Asc_KAZU_Size12_NML_9:
 
     .global Asc_KAZU_Size12_NML_Tbl
 Asc_KAZU_Size12_NML_Tbl:
-    baserom 0x1B898, 0x28
+    .4byte Asc_KAZU_Size12_NML_0
+    .4byte Asc_KAZU_Size12_NML_1
+    .4byte Asc_KAZU_Size12_NML_2
+    .4byte Asc_KAZU_Size12_NML_3
+    .4byte Asc_KAZU_Size12_NML_4
+    .4byte Asc_KAZU_Size12_NML_5
+    .4byte Asc_KAZU_Size12_NML_6
+    .4byte Asc_KAZU_Size12_NML_7
+    .4byte Asc_KAZU_Size12_NML_8
+    .4byte Asc_KAZU_Size12_NML_9
 
     .global Asc_KAZ2_Size12_NML_0
 Asc_KAZ2_Size12_NML_0:
@@ -2504,23 +3231,450 @@ Asc_KAZ2_Size12_NML_9:
 
     .global Asc_KAZ2_Size12_NML_Tbl
 Asc_KAZ2_Size12_NML_Tbl:
-    baserom 0x1B8E8, 0x28
+    .4byte Asc_KAZ2_Size12_NML_0
+    .4byte Asc_KAZ2_Size12_NML_1
+    .4byte Asc_KAZ2_Size12_NML_2
+    .4byte Asc_KAZ2_Size12_NML_3
+    .4byte Asc_KAZ2_Size12_NML_4
+    .4byte Asc_KAZ2_Size12_NML_5
+    .4byte Asc_KAZ2_Size12_NML_6
+    .4byte Asc_KAZ2_Size12_NML_7
+    .4byte Asc_KAZ2_Size12_NML_8
+    .4byte Asc_KAZ2_Size12_NML_9
 
     .global NisOptSel_Buf
 NisOptSel_Buf:
-    baserom 0x1B910, 0x78
-
+    .word ascii2_20119D7
+    .word NisOptSel_np_sw_markten+1
+    .word ascii2_20119E5
+    .word NisOptSel_np_sw_countstop+1
+    .word ascii2_20119F3
+    .word NisOptSel_np_fld_bscfg+1
+    .word ascii2_2011A01
+    .word NisOptSel_np_sw_PanelNumber+1
+    .word ascii2_2011A0F
+    .word NisOptSel_np_sw_no_roll_stop+1
+    .word ascii2_2011A1D
+    .word NisOptSel_np_sw_ball_command+1
+    .word ascii2_2011A2D
+    .word NisOptSel_np_sw_Put_GOCnt+1
+    .word ascii2_2011A3B
+    .word NisOptSel_np_sw_OjamaKaitou+1
+    .word ascii2_2011A49
+    .word NisOptSel_np_sw_AgbKey_mode+1
+    .word ascii2_2011A57
+    .word NisOptSel_np_sw_panelanime+1
+    .word ascii2_2011A65
+    .word NisOptSel_np_sw_kage_color+1
+    .word ascii2_2011A73
+    .word NisOptSel_np_sw_field_color+1
+    .word ascii2_2011A83
+    .word NisOptSel_np_sw_zenkeshi+1
+    .word 0
+    .word NisOptSel_np_sw_option_def+1
+    .word 0
+    .word 0
+   
     .global NisSelect_DT
 NisSelect_DT:
-    baserom 0x1B988, 0x208
+    .byte 0 @; nPage
+    .byte 0 @; nCsl
+    .byte 1 @; nDown
+    .byte 4 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 1 @; nUpTrg
+    .byte 1 @; nAbutt
+    .byte 255 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 5 @; nPuty
+    .byte 0, 0
+    .word pad2
+    .word np_Msg_Help_00
+    .byte 0 @; nPage
+    .byte 1 @; nCsl
+    .byte 2 @; nDown
+    .byte 0 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 2 @; nAbutt
+    .byte 255 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 7 @; nPuty
+    .byte 0, 0
+    .word pad2
+    .word np_Msg_Help_01
+    .byte 0 @; nPage
+    .byte 2 @; nCsl
+    .byte 3 @; nDown
+    .byte 1 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 4 @; nAbutt
+    .byte 255 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 9 @; nPuty
+    .byte 0, 0
+    .word pad2
+    .word np_Msg_Help_04
+    .byte 0 @; nPage
+    .byte 3 @; nCsl
+    .byte 4 @; nDown
+    .byte 2 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 3 @; nAbutt
+    .byte 255 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 11 @; nPuty
+    .byte 0, 0
+    .word pad2
+    .word np_Msg_Help_02
+    .byte 0 @; nPage
+    .byte 4 @; nCsl
+    .byte 0 @; nDown
+    .byte 3 @; nUp
+    .byte 1 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 255 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 13 @; nPuty
+    .byte 0, 0
+    .word pad2
+    .word np_Msg_Help_03
+    .byte 1 @; nPage
+    .byte 0 @; nCsl
+    .byte 1 @; nDown
+    .byte 2 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 1 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 7 @; nPuty
+    .byte 0, 0
+    .word ascii2_2011949
+    .word np_Msg_Help_10
+    .byte 1 @; nPage
+    .byte 1 @; nCsl
+    .byte 2 @; nDown
+    .byte 0 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 9 @; nPuty
+    .byte 0, 0
+    .word ascii2_2011949
+    .word np_Msg_Help_11
+    .byte 1 @; nPage
+    .byte 2 @; nCsl
+    .byte 0 @; nDown
+    .byte 1 @; nUp
+    .byte 1 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 12 @; nPuty
+    .byte 0, 0
+    .word ascii2_2011949
+    .word np_Msg_Help_12
+    .byte 2 @; nPage
+    .byte 0 @; nCsl
+    .byte 1 @; nDown
+    .byte 2 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 1 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 7 @; nPuty
+    .byte 0, 0
+    .word ascii2_201197E
+    .word np_Msg_Help_20
+    .byte 2 @; nPage
+    .byte 1 @; nCsl
+    .byte 2 @; nDown
+    .byte 0 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 9 @; nPuty
+    .byte 0, 0
+    .word ascii2_201197E
+    .word np_Msg_Help_21
+    .byte 2 @; nPage
+    .byte 2 @; nCsl
+    .byte 0 @; nDown
+    .byte 1 @; nUp
+    .byte 1 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 12 @; nPuty
+    .byte 0, 0
+    .word ascii2_201197E
+    .word np_Msg_Help_22
+    .byte 3 @; nPage
+    .byte 0 @; nCsl
+    .byte 1 @; nDown
+    .byte 0 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 7 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_30
+    .byte 3 @; nPage
+    .byte 1 @; nCsl
+    .byte 2 @; nDown
+    .byte 0 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 9 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_31
+    .byte 3 @; nPage
+    .byte 2 @; nCsl
+    .byte 3 @; nDown
+    .byte 1 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 11 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_32
+    .byte 3 @; nPage
+    .byte 3 @; nCsl
+    .byte 4 @; nDown
+    .byte 2 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 13 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_33
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_34
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_35
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_36
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_37
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_38
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_39
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_3a
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_3b
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_3c
+    .byte 3 @; nPage
+    .byte 4 @; nCsl
+    .byte 4 @; nDown
+    .byte 3 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 15 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119B4
+    .word np_Msg_Help_3d
+    .byte 4 @; nPage
+    .byte 0 @; nCsl
+    .byte 0 @; nDown
+    .byte 0 @; nUp
+    .byte 0 @; nDwTrg
+    .byte 0 @; nUpTrg
+    .byte 255 @; nAbutt
+    .byte 0 @; nBbutt
+    .byte 2 @; nPutx
+    .byte 7 @; nPuty
+    .byte 0, 0
+    .word ascii2_20119BD
+    .word np_Msg_Help_40
 
     .global NisSelectSub_pCslDat
 NisSelectSub_pCslDat:
-    baserom 0x1BB90, 0x74
+    .4byte Aob_Panel_Select_09
+    .4byte Aob_Panel_Select_09
+    .4byte Aob_Panel_Select_09
+    .4byte Aob_Panel_Select_0a
+    .4byte Aob_Panel_Select_0a
+    .4byte Aob_Panel_Select_0b
+    .4byte Aob_Panel_Select_0b
+    .4byte Aob_Panel_Select_0b
+    .4byte Aob_Panel_Select_0b
+    .4byte Aob_Panel_Select_0b
+    .4byte Aob_Panel_Select_0b
+    .4byte Aob_Panel_Select_0b
+    .4byte Aob_Panel_Select_0b
+    .4byte Aob_Panel_Select_0a
+    .4byte Aob_Panel_Select_0a
+    .4byte Aob_Panel_Select_09
+    .4byte Aob_Panel_Select_09
+    .4byte Aob_Panel_Select_09
+    .4byte Aob_Panel_Select_08
+    .4byte Aob_Panel_Select_08
+    .4byte Aob_Panel_Select_08
+    .4byte Aob_Panel_Select_08
+    .4byte Aob_Panel_Select_08
+    .4byte Aob_Panel_Select_08
+    .4byte Aob_Panel_Select_08
+    .4byte Aob_Panel_Select_08
+    .4byte Aob_Panel_Select_09
+    .4byte Aob_Panel_Select_09
+    .4byte Aob_Panel_Select_09
 
     .global NisMoveKabeColor_Tbl
 NisMoveKabeColor_Tbl:
-    baserom 0x1BC04, 0x64
+    .4byte ponagb2m_kabe_Acl_Nml
+    .4byte ponagb2m_kabe_Acl_Red2
+    .4byte ponagb2m_kabe_Acl_Ylw2
+    .4byte ponagb2m_kabe_Acl_Grn2
+    .4byte ponagb2m_kabe_Acl_Miz2
+    .4byte ponagb2m_kabe_Acl_Blu2
+    .4byte ponagb2m_kabe_Acl_Mur2
+    .4byte ponagb2m_kabe_Acl_Blk2
+    .4byte ponagb2m_kabe_Acl_Wht2
+    .4byte ponagb2m_kabe_Acl_Red
+    .4byte ponagb2m_kabe_Acl_Ylw
+    .4byte ponagb2m_kabe_Acl_Grn
+    .4byte ponagb2m_kabe_Acl_Miz
+    .4byte ponagb2m_kabe_Acl_Blu
+    .4byte ponagb2m_kabe_Acl_Mur
+    .4byte ponagb2m_kabe_Acl_Blk
+    .4byte ponagb2m_kabe_Acl_Wht
+    .4byte ponagb2m_kabe_Acl_Red1
+    .4byte ponagb2m_kabe_Acl_Ylw1
+    .4byte ponagb2m_kabe_Acl_Grn1
+    .4byte ponagb2m_kabe_Acl_Miz1
+    .4byte ponagb2m_kabe_Acl_Blu1
+    .4byte ponagb2m_kabe_Acl_Mur1
+    .4byte ponagb2m_kabe_Acl_Blk1
+    .4byte ponagb2m_kabe_Acl_Wht1
 
     .global np_pictuescr
 np_pictuescr:
@@ -2656,7 +3810,33 @@ nojpt_ZET_6_01:
 
     .global nojpt_tbl
 nojpt_tbl:
-    baserom 0x1C1AC, 0x6C
+    .4byte nojpt_OJM_1_01
+    .4byte nojpt_OJM_2_01
+    .4byte nojpt_OJM_3_01
+    .4byte nojpt_OJM_4_01
+    .4byte nojpt_OJM_5_01
+    .4byte nojpt_OJM_6_01
+    .4byte nojpt_OJM_6_02
+    .4byte nojpt_OJM_6_03
+    .4byte nojpt_OJM_6_04
+    .4byte nojpt_OJM_6_05
+    .4byte nojpt_OJM_6_06
+    .4byte nojpt_OJM_6_07
+    .4byte nojpt_OJM_6_08
+    .4byte nojpt_OJM_6_09
+    .4byte nojpt_OJM_6_10
+    .4byte nojpt_OJM_6_11
+    .4byte nojpt_OJM_6_12
+    .4byte nojpt_OJM_6_13
+    .4byte nojpt_OJM_6_14
+    .4byte nojpt_OJM_6_15
+    .4byte nojpt_OJM_6_16
+    .4byte nojpt_ZET_1_01
+    .4byte nojpt_ZET_2_01
+    .4byte nojpt_ZET_3_01
+    .4byte nojpt_ZET_4_01
+    .4byte nojpt_ZET_5_01
+    .4byte nojpt_ZET_6_01
 
     .global nojpt_emtbl
 nojpt_emtbl:
@@ -2776,11 +3956,38 @@ PutDataBgDex:
 
     .global MainSeqTable
 MainSeqTable:
-    baserom 0x1C728, 0x40
+    .4byte NisATitleInit+1
+    .4byte NisATitleMain0+1
+    .4byte NisATitleMain1+1
+    .4byte NisATitleLast+1
+    .4byte NisTitleInit+1
+    .4byte NisTitleMain+1
+    .4byte NisSelectInit+1
+    .4byte NisSelectMain+1
+    .4byte nis_game_init+1
+    .4byte nis_game_main+1
+    .4byte NisTestSelectInit+1
+    .4byte NisTestSelectMain+1
+    .4byte NisMsgSleepInit+1
+    .4byte NisMsgSleepMain+1
+    .4byte NisOptField_Init+1
+    .4byte NisOptField_Main+1
 
     .global IntrTable
 IntrTable:
-    baserom 0x1C768, 0x34
+    .4byte VBlankIntr+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
+    .4byte GBAJoyIntr+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
+    .4byte IntrDummy+1
 
     .global NisCtcPara_Data
 NisCtcPara_Data:
