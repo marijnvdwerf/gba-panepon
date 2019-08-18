@@ -814,7 +814,14 @@ ProgrammableWaveData_2029468:
 
     .global mplay_table
 mplay_table:
-    baserom 0x29478, 0x60
+    .word m4a_mplay000, m4a_track000, 0x10009
+    .word m4a_mplay001, m4a_track001, 0x10002
+    .word m4a_mplay002, m4a_track002, 0x10002
+    .word m4a_mplay003, m4a_track003, 0x10002
+    .word m4a_mplay004, m4a_track004, 0x10002
+    .word m4a_mplay005, m4a_track005, 0x10004
+    .word m4a_mplay006, m4a_track006, 0x10004
+    .word m4a_mplay007, m4a_track007, 0x10004
 
     .global song_table
 song_table:
@@ -1941,13 +1948,13 @@ SongTrack_2035C44:
 
     .global ptr_2035C51
 ptr_2035C51:
-    .4byte 0x2035C3A
+    .4byte SongTrack_2035C3A
 
     baserom 0x35C55, 0x1
 
     .global ptr_2035C56
 ptr_2035C56:
-    .4byte 0x2035C44
+    .4byte SongTrack_2035C44
 
     .global SongTrack_2035C5A
 SongTrack_2035C5A:
@@ -1975,7 +1982,7 @@ SongTrack_2035CA5:
 
     .global ptr_2035CB2
 ptr_2035CB2:
-    .4byte 0x2035C5A
+    .4byte SongTrack_2035C5A
 
     .global SongTrack_2035CB6
 SongTrack_2035CB6:
@@ -1999,73 +2006,73 @@ SongTrack_2035CDE:
 
     .global ptr_2035CF2
 ptr_2035CF2:
-    .4byte 0x2035C5A
+    .4byte SongTrack_2035C5A
 
     baserom 0x35CF6, 0x1
 
     .global ptr_2035CF7
 ptr_2035CF7:
-    .4byte 0x2035C65
+    .4byte SongTrack_2035C65
 
     baserom 0x35CFB, 0xB
 
     .global ptr_2035D06
 ptr_2035D06:
-    .4byte 0x2035C77
+    .4byte SongTrack_2035C77
 
     baserom 0x35D0A, 0x1
 
     .global ptr_2035D0B
 ptr_2035D0B:
-    .4byte 0x2035C80
+    .4byte SongTrack_2035C80
 
     baserom 0x35D0F, 0x1
 
     .global ptr_2035D10
 ptr_2035D10:
-    .4byte 0x2035C96
+    .4byte SongTrack_2035C96
 
     baserom 0x35D14, 0x1
 
     .global ptr_2035D15
 ptr_2035D15:
-    .4byte 0x2035CA5
+    .4byte SongTrack_2035CA5
 
     baserom 0x35D19, 0x2
 
     .global ptr_2035D1B
 ptr_2035D1B:
-    .4byte 0x2035C5A
+    .4byte SongTrack_2035C5A
 
     baserom 0x35D1F, 0x1
 
     .global ptr_2035D20
 ptr_2035D20:
-    .4byte 0x2035CB6
+    .4byte SongTrack_2035CB6
 
     baserom 0x35D24, 0x1
 
     .global ptr_2035D25
 ptr_2035D25:
-    .4byte 0x2035CBE
+    .4byte SongTrack_2035CBE
 
     baserom 0x35D29, 0x1
 
     .global ptr_2035D2A
 ptr_2035D2A:
-    .4byte 0x2035CC9
+    .4byte SongTrack_2035CC9
 
     baserom 0x35D2E, 0x1
 
     .global ptr_2035D2F
 ptr_2035D2F:
-    .4byte 0x2035CD1
+    .4byte SongTrack_2035CD1
 
     baserom 0x35D33, 0x1
 
     .global ptr_2035D34
 ptr_2035D34:
-    .4byte 0x2035CDE
+    .4byte SongTrack_2035CDE
 
     .global SongTrack_2035D38
 SongTrack_2035D38:
@@ -2077,37 +2084,37 @@ SongTrack_2035D45:
 
     .global ptr_2035D51
 ptr_2035D51:
-    .4byte 0x2035D38
+    .4byte SongTrack_2035D38
 
     baserom 0x35D55, 0x1
 
     .global ptr_2035D56
 ptr_2035D56:
-    .4byte 0x2035D45
+    .4byte SongTrack_2035D45
 
     baserom 0x35D5A, 0x1
 
     .global ptr_2035D5B
 ptr_2035D5B:
-    .4byte 0x2035D38
+    .4byte SongTrack_2035D38
 
     baserom 0x35D5F, 0x1
 
     .global ptr_2035D60
 ptr_2035D60:
-    .4byte 0x2035D45
+    .4byte SongTrack_2035D45
 
     baserom 0x35D64, 0x1
 
     .global ptr_2035D65
 ptr_2035D65:
-    .4byte 0x2035D38
+    .4byte SongTrack_2035D38
 
     baserom 0x35D69, 0x5
 
     .global ptr_2035D6E
 ptr_2035D6E:
-    .4byte 0x2035C34
+    .4byte SongTrack_2035C34
 
     baserom 0x35D72, 0x1
 
@@ -2121,7 +2128,7 @@ SongTrack_2035D8E:
 
     .global ptr_2035E79
 ptr_2035E79:
-    .4byte 0x2035D8E
+    .4byte SongTrack_2035D8E
 
     baserom 0x35E7D, 0x1
 
@@ -2135,7 +2142,7 @@ SongTrack_2035E8B:
 
     .global ptr_2035F2D
 ptr_2035F2D:
-    .4byte 0x2035E8B
+    .4byte SongTrack_2035E8B
 
     baserom 0x35F31, 0x1
 
@@ -2153,7 +2160,7 @@ SongTrack_2035FA3:
 
     .global ptr_2035FE5
 ptr_2035FE5:
-    .4byte 0x2035FA3
+    .4byte SongTrack_2035FA3
 
     .global SongTrack_2035FE9
 SongTrack_2035FE9:
@@ -2165,7 +2172,7 @@ SongTrack_2035FF9:
 
     .global ptr_2036018
 ptr_2036018:
-    .4byte 0x2035FE9
+    .4byte SongTrack_2035FE9
 
     baserom 0x3601C, 0x1B
 
@@ -2183,49 +2190,49 @@ SongTrack_2036059:
 
     .global ptr_2036079
 ptr_2036079:
-    .4byte 0x2035FE9
+    .4byte SongTrack_2035FE9
 
     baserom 0x3607D, 0x3C
 
     .global ptr_20360B9
 ptr_20360B9:
-    .4byte 0x2035FE9
+    .4byte SongTrack_2035FE9
 
     baserom 0x360BD, 0x1F
 
     .global ptr_20360DC
 ptr_20360DC:
-    .4byte 0x2036059
+    .4byte SongTrack_2036059
 
     baserom 0x360E0, 0x2B
 
     .global ptr_203610B
 ptr_203610B:
-    .4byte 0x2036037
+    .4byte SongTrack_2036037
 
     baserom 0x3610F, 0x1
 
     .global ptr_2036110
 ptr_2036110:
-    .4byte 0x2036048
+    .4byte SongTrack_2036048
 
     baserom 0x36114, 0x1
 
     .global ptr_2036115
 ptr_2036115:
-    .4byte 0x2035FE9
+    .4byte SongTrack_2035FE9
 
     baserom 0x36119, 0x1
 
     .global ptr_203611A
 ptr_203611A:
-    .4byte 0x2035FF9
+    .4byte SongTrack_2035FF9
 
     baserom 0x3611E, 0x1
 
     .global ptr_203611F
 ptr_203611F:
-    .4byte 0x2035FE9
+    .4byte SongTrack_2035FE9
 
     baserom 0x36123, 0x2B
 
@@ -2239,37 +2246,37 @@ SongTrack_203615B:
 
     .global ptr_2036167
 ptr_2036167:
-    .4byte 0x203614E
+    .4byte SongTrack_203614E
 
     baserom 0x3616B, 0x1
 
     .global ptr_203616C
 ptr_203616C:
-    .4byte 0x203615B
+    .4byte SongTrack_203615B
 
     baserom 0x36170, 0x1
 
     .global ptr_2036171
 ptr_2036171:
-    .4byte 0x203614E
+    .4byte SongTrack_203614E
 
     baserom 0x36175, 0x1
 
     .global ptr_2036176
 ptr_2036176:
-    .4byte 0x203615B
+    .4byte SongTrack_203615B
 
     baserom 0x3617A, 0x1
 
     .global ptr_203617B
 ptr_203617B:
-    .4byte 0x203614E
+    .4byte SongTrack_203614E
 
     baserom 0x3617F, 0x5
 
     .global ptr_2036184
 ptr_2036184:
-    .4byte 0x2035F73
+    .4byte SongTrack_2035F73
 
     baserom 0x36188, 0x1
 
@@ -2291,13 +2298,13 @@ SongTrack_20361A2:
 
     .global ptr_20361AC
 ptr_20361AC:
-    .4byte 0x203619B
+    .4byte SongTrack_203619B
 
     baserom 0x361B0, 0x1
 
     .global ptr_20361B1
 ptr_20361B1:
-    .4byte 0x20361A2
+    .4byte SongTrack_20361A2
 
     .global SongTrack_20361B5
 SongTrack_20361B5:
@@ -2321,13 +2328,13 @@ SongTrack_20361E0:
 
     .global ptr_20361F2
 ptr_20361F2:
-    .4byte 0x20361B5
+    .4byte SongTrack_20361B5
 
     baserom 0x361F6, 0x1
 
     .global ptr_20361F7
 ptr_20361F7:
-    .4byte 0x20361BE
+    .4byte SongTrack_20361BE
 
     .global SongTrack_20361FB
 SongTrack_20361FB:
@@ -2343,61 +2350,61 @@ SongTrack_203620E:
 
     .global ptr_2036224
 ptr_2036224:
-    .4byte 0x20361B5
+    .4byte SongTrack_20361B5
 
     baserom 0x36228, 0x1
 
     .global ptr_2036229
 ptr_2036229:
-    .4byte 0x20361BE
+    .4byte SongTrack_20361BE
 
     baserom 0x3622D, 0x1
 
     .global ptr_203622E
 ptr_203622E:
-    .4byte 0x20361C8
+    .4byte SongTrack_20361C8
 
     baserom 0x36232, 0x1
 
     .global ptr_2036233
 ptr_2036233:
-    .4byte 0x20361D1
+    .4byte SongTrack_20361D1
 
     baserom 0x36237, 0x7
 
     .global ptr_203623E
 ptr_203623E:
-    .4byte 0x20361E0
+    .4byte SongTrack_20361E0
 
     baserom 0x36242, 0xB
 
     .global ptr_203624D
 ptr_203624D:
-    .4byte 0x20361B5
+    .4byte SongTrack_20361B5
 
     baserom 0x36251, 0xB
 
     .global ptr_203625C
 ptr_203625C:
-    .4byte 0x20361FB
+    .4byte SongTrack_20361FB
 
     baserom 0x36260, 0x1
 
     .global ptr_2036261
 ptr_2036261:
-    .4byte 0x2036204
+    .4byte SongTrack_2036204
 
     baserom 0x36265, 0x1
 
     .global ptr_2036266
 ptr_2036266:
-    .4byte 0x203620E
+    .4byte SongTrack_203620E
 
     baserom 0x3626A, 0xF
 
     .global ptr_2036279
 ptr_2036279:
-    .4byte 0x2036197
+    .4byte SongTrack_2036197
 
     baserom 0x3627D, 0x1
 
@@ -2419,13 +2426,13 @@ SongTrack_2036295:
 
     .global ptr_203629F
 ptr_203629F:
-    .4byte 0x203628E
+    .4byte SongTrack_203628E
 
     baserom 0x362A3, 0x1
 
     .global ptr_20362A4
 ptr_20362A4:
-    .4byte 0x2036295
+    .4byte SongTrack_2036295
 
     .global SongTrack_20362A8
 SongTrack_20362A8:
@@ -2453,13 +2460,13 @@ SongTrack_20362DC:
 
     .global ptr_20362E7
 ptr_20362E7:
-    .4byte 0x20362A8
+    .4byte SongTrack_20362A8
 
     baserom 0x362EB, 0x1
 
     .global ptr_20362EC
 ptr_20362EC:
-    .4byte 0x20362B1
+    .4byte SongTrack_20362B1
 
     .global SongTrack_20362F0
 SongTrack_20362F0:
@@ -2475,73 +2482,73 @@ SongTrack_2036307:
 
     .global ptr_2036318
 ptr_2036318:
-    .4byte 0x20362A8
+    .4byte SongTrack_20362A8
 
     baserom 0x3631C, 0x1
 
     .global ptr_203631D
 ptr_203631D:
-    .4byte 0x20362B1
+    .4byte SongTrack_20362B1
 
     baserom 0x36321, 0x1
 
     .global ptr_2036322
 ptr_2036322:
-    .4byte 0x20362BB
+    .4byte SongTrack_20362BB
 
     baserom 0x36326, 0x1
 
     .global ptr_2036327
 ptr_2036327:
-    .4byte 0x20362C4
+    .4byte SongTrack_20362C4
 
     baserom 0x3632B, 0x7
 
     .global ptr_2036332
 ptr_2036332:
-    .4byte 0x20362D3
+    .4byte SongTrack_20362D3
 
     baserom 0x36336, 0x1
 
     .global ptr_2036337
 ptr_2036337:
-    .4byte 0x20362DC
+    .4byte SongTrack_20362DC
 
     baserom 0x3633B, 0x1
 
     .global ptr_203633C
 ptr_203633C:
-    .4byte 0x20362A8
+    .4byte SongTrack_20362A8
 
     baserom 0x36340, 0x1
 
     .global ptr_2036341
 ptr_2036341:
-    .4byte 0x20362B1
+    .4byte SongTrack_20362B1
 
     baserom 0x36345, 0x1
 
     .global ptr_2036346
 ptr_2036346:
-    .4byte 0x20362F0
+    .4byte SongTrack_20362F0
 
     baserom 0x3634A, 0x1
 
     .global ptr_203634B
 ptr_203634B:
-    .4byte 0x20362F9
+    .4byte SongTrack_20362F9
 
     baserom 0x3634F, 0x7
 
     .global ptr_2036356
 ptr_2036356:
-    .4byte 0x2036307
+    .4byte SongTrack_2036307
 
     baserom 0x3635A, 0x3A
 
     .global ptr_2036394
 ptr_2036394:
-    .4byte 0x2036284
+    .4byte SongTrack_2036284
 
     baserom 0x36398, 0x1
 
@@ -2563,13 +2570,13 @@ SongTrack_20363B2:
 
     .global ptr_20363BC
 ptr_20363BC:
-    .4byte 0x20363AB
+    .4byte SongTrack_20363AB
 
     baserom 0x363C0, 0x1
 
     .global ptr_20363C1
 ptr_20363C1:
-    .4byte 0x20363B2
+    .4byte SongTrack_20363B2
 
     .global SongTrack_20363C5
 SongTrack_20363C5:
@@ -2593,25 +2600,25 @@ SongTrack_20363F0:
 
     .global ptr_2036401
 ptr_2036401:
-    .4byte 0x20363C5
+    .4byte SongTrack_20363C5
 
     baserom 0x36405, 0x1
 
     .global ptr_2036406
 ptr_2036406:
-    .4byte 0x20363CE
+    .4byte SongTrack_20363CE
 
     baserom 0x3640A, 0x1
 
     .global ptr_203640B
 ptr_203640B:
-    .4byte 0x20363C5
+    .4byte SongTrack_20363C5
 
     baserom 0x3640F, 0x1
 
     .global ptr_2036410
 ptr_2036410:
-    .4byte 0x20363CE
+    .4byte SongTrack_20363CE
 
     .global SongTrack_2036414
 SongTrack_2036414:
@@ -2619,67 +2626,67 @@ SongTrack_2036414:
 
     .global ptr_203642B
 ptr_203642B:
-    .4byte 0x20363C5
+    .4byte SongTrack_20363C5
 
     baserom 0x3642F, 0x1
 
     .global ptr_2036430
 ptr_2036430:
-    .4byte 0x20363CE
+    .4byte SongTrack_20363CE
 
     baserom 0x36434, 0x1
 
     .global ptr_2036435
 ptr_2036435:
-    .4byte 0x20363D8
+    .4byte SongTrack_20363D8
 
     baserom 0x36439, 0x1
 
     .global ptr_203643A
 ptr_203643A:
-    .4byte 0x20363E1
+    .4byte SongTrack_20363E1
 
     baserom 0x3643E, 0x7
 
     .global ptr_2036445
 ptr_2036445:
-    .4byte 0x20363F0
+    .4byte SongTrack_20363F0
 
     baserom 0x36449, 0xA
 
     .global ptr_2036453
 ptr_2036453:
-    .4byte 0x20363C5
+    .4byte SongTrack_20363C5
 
     baserom 0x36457, 0x1
 
     .global ptr_2036458
 ptr_2036458:
-    .4byte 0x20363CE
+    .4byte SongTrack_20363CE
 
     baserom 0x3645C, 0x1
 
     .global ptr_203645D
 ptr_203645D:
-    .4byte 0x20363C5
+    .4byte SongTrack_20363C5
 
     baserom 0x36461, 0x1
 
     .global ptr_2036462
 ptr_2036462:
-    .4byte 0x20363CE
+    .4byte SongTrack_20363CE
 
     baserom 0x36466, 0x1
 
     .global ptr_2036467
 ptr_2036467:
-    .4byte 0x2036414
+    .4byte SongTrack_2036414
 
     baserom 0x3646B, 0x10
 
     .global ptr_203647B
 ptr_203647B:
-    .4byte 0x20363A7
+    .4byte SongTrack_20363A7
 
     baserom 0x3647F, 0x1
 
@@ -2697,265 +2704,265 @@ SongTrack_20364A2:
 
     .global ptr_20364B2
 ptr_20364B2:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x364B6, 0x1
 
     .global ptr_20364B7
 ptr_20364B7:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x364BB, 0x1
 
     .global ptr_20364BC
 ptr_20364BC:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x364C0, 0x1
 
     .global ptr_20364C1
 ptr_20364C1:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x364C5, 0x1
 
     .global ptr_20364C6
 ptr_20364C6:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x364CA, 0x1
 
     .global ptr_20364CB
 ptr_20364CB:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x364CF, 0x1
 
     .global ptr_20364D0
 ptr_20364D0:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x364D4, 0x1
 
     .global ptr_20364D5
 ptr_20364D5:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x364D9, 0x1
 
     .global ptr_20364DA
 ptr_20364DA:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x364DE, 0x1
 
     .global ptr_20364DF
 ptr_20364DF:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x364E3, 0x1
 
     .global ptr_20364E4
 ptr_20364E4:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x364E8, 0x1
 
     .global ptr_20364E9
 ptr_20364E9:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x364ED, 0x1
 
     .global ptr_20364EE
 ptr_20364EE:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x364F2, 0x1
 
     .global ptr_20364F3
 ptr_20364F3:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x364F7, 0x1
 
     .global ptr_20364F8
 ptr_20364F8:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x364FC, 0x1
 
     .global ptr_20364FD
 ptr_20364FD:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36501, 0x1
 
     .global ptr_2036502
 ptr_2036502:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36506, 0x1
 
     .global ptr_2036507
 ptr_2036507:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x3650B, 0x1
 
     .global ptr_203650C
 ptr_203650C:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36510, 0x1
 
     .global ptr_2036511
 ptr_2036511:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36515, 0x1
 
     .global ptr_2036516
 ptr_2036516:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x3651A, 0x1
 
     .global ptr_203651B
 ptr_203651B:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x3651F, 0x1
 
     .global ptr_2036520
 ptr_2036520:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36524, 0x1
 
     .global ptr_2036525
 ptr_2036525:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36529, 0x1
 
     .global ptr_203652A
 ptr_203652A:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x3652E, 0x1
 
     .global ptr_203652F
 ptr_203652F:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36533, 0x1
 
     .global ptr_2036534
 ptr_2036534:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36538, 0x1
 
     .global ptr_2036539
 ptr_2036539:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x3653D, 0x1
 
     .global ptr_203653E
 ptr_203653E:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36542, 0x1
 
     .global ptr_2036543
 ptr_2036543:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36547, 0x1
 
     .global ptr_2036548
 ptr_2036548:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x3654C, 0x1
 
     .global ptr_203654D
 ptr_203654D:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36551, 0x1
 
     .global ptr_2036552
 ptr_2036552:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36556, 0x1
 
     .global ptr_2036557
 ptr_2036557:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x3655B, 0x1
 
     .global ptr_203655C
 ptr_203655C:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36560, 0x1
 
     .global ptr_2036561
 ptr_2036561:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36565, 0x1
 
     .global ptr_2036566
 ptr_2036566:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x3656A, 0x1
 
     .global ptr_203656B
 ptr_203656B:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x3656F, 0x1
 
     .global ptr_2036570
 ptr_2036570:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36574, 0x1
 
     .global ptr_2036575
 ptr_2036575:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36579, 0x1
 
     .global ptr_203657A
 ptr_203657A:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x3657E, 0x1
 
     .global ptr_203657F
 ptr_203657F:
-    .4byte 0x20364A2
+    .4byte SongTrack_20364A2
 
     baserom 0x36583, 0x1
 
     .global ptr_2036584
 ptr_2036584:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x36588, 0xF
 
     .global ptr_2036597
 ptr_2036597:
-    .4byte 0x2036497
+    .4byte SongTrack_2036497
 
     baserom 0x3659B, 0x1
 
@@ -2985,7 +2992,7 @@ SongTrack_20365C6:
 
     .global ptr_2036635
 ptr_2036635:
-    .4byte 0x20365C6
+    .4byte SongTrack_20365C6
 
     baserom 0x36639, 0x1
 
@@ -2999,7 +3006,7 @@ SongTrack_203663C:
 
     .global ptr_203666A
 ptr_203666A:
-    .4byte 0x203663C
+    .4byte SongTrack_203663C
 
     baserom 0x3666E, 0x1
 
@@ -3017,19 +3024,19 @@ SongTrack_203669D:
 
     .global ptr_20366C7
 ptr_20366C7:
-    .4byte 0x203669D
+    .4byte SongTrack_203669D
 
     baserom 0x366CB, 0x1
 
     .global ptr_20366CC
 ptr_20366CC:
-    .4byte 0x203669D
+    .4byte SongTrack_203669D
 
     baserom 0x366D0, 0x1
 
     .global ptr_20366D1
 ptr_20366D1:
-    .4byte 0x2036671
+    .4byte SongTrack_2036671
 
     baserom 0x366D5, 0x1
 
@@ -3047,13 +3054,13 @@ SongTrack_2036700:
 
     .global ptr_2036724
 ptr_2036724:
-    .4byte 0x2036700
+    .4byte SongTrack_2036700
 
     baserom 0x36728, 0x23
 
     .global ptr_203674B
 ptr_203674B:
-    .4byte 0x20366D8
+    .4byte SongTrack_20366D8
 
     baserom 0x3674F, 0x1
 
@@ -3083,13 +3090,13 @@ SongTrack_2036780:
 
     .global ptr_20367A6
 ptr_20367A6:
-    .4byte 0x2036780
+    .4byte SongTrack_2036780
 
     baserom 0x367AA, 0x53
 
     .global ptr_20367FD
 ptr_20367FD:
-    .4byte 0x203676A
+    .4byte SongTrack_203676A
 
     baserom 0x36801, 0x23
 
@@ -3111,19 +3118,19 @@ SongTrack_203683D:
 
     .global ptr_203684D
 ptr_203684D:
-    .4byte 0x203683D
+    .4byte SongTrack_203683D
 
     baserom 0x36851, 0x1
 
     .global ptr_2036852
 ptr_2036852:
-    .4byte 0x2036834
+    .4byte SongTrack_2036834
 
     baserom 0x36856, 0x1
 
     .global ptr_2036857
 ptr_2036857:
-    .4byte 0x203683D
+    .4byte SongTrack_203683D
 
     baserom 0x3685B, 0x8
 
@@ -3133,13 +3140,13 @@ SongTrack_2036863:
 
     .global ptr_2036873
 ptr_2036873:
-    .4byte 0x2036863
+    .4byte SongTrack_2036863
 
     baserom 0x36877, 0x23
 
     .global ptr_203689A
 ptr_203689A:
-    .4byte 0x2036826
+    .4byte SongTrack_2036826
 
     baserom 0x3689E, 0x26
 
@@ -3163,7 +3170,7 @@ SongTrack_20368D6:
 
     .global ptr_2036992
 ptr_2036992:
-    .4byte 0x20368D6
+    .4byte SongTrack_20368D6
 
     baserom 0x36996, 0x2
 
@@ -3181,13 +3188,13 @@ SongTrack_20369B5:
 
     .global ptr_20369E0
 ptr_20369E0:
-    .4byte 0x20369B5
+    .4byte SongTrack_20369B5
 
     baserom 0x369E4, 0x1
 
     .global ptr_20369E5
 ptr_20369E5:
-    .4byte 0x203699A
+    .4byte SongTrack_203699A
 
     baserom 0x369E9, 0x2
 
@@ -3205,13 +3212,13 @@ SongTrack_2036A2B:
 
     .global ptr_2036A67
 ptr_2036A67:
-    .4byte 0x2036A2B
+    .4byte SongTrack_2036A2B
 
     baserom 0x36A6B, 0x3B
 
     .global ptr_2036AA6
 ptr_2036AA6:
-    .4byte 0x20369ED
+    .4byte SongTrack_20369ED
 
     baserom 0x36AAA, 0x2
 
@@ -3229,19 +3236,19 @@ SongTrack_2036AC8:
 
     .global ptr_2036ADE
 ptr_2036ADE:
-    .4byte 0x2036AC8
+    .4byte SongTrack_2036AC8
 
     baserom 0x36AE2, 0x1
 
     .global ptr_2036AE3
 ptr_2036AE3:
-    .4byte 0x2036AC8
+    .4byte SongTrack_2036AC8
 
     baserom 0x36AE7, 0x1
 
     .global ptr_2036AE8
 ptr_2036AE8:
-    .4byte 0x2036AAE
+    .4byte SongTrack_2036AAE
 
     baserom 0x36AEC, 0x2
 
@@ -3259,13 +3266,13 @@ SongTrack_2036B0A:
 
     .global ptr_2036B32
 ptr_2036B32:
-    .4byte 0x2036B0A
+    .4byte SongTrack_2036B0A
 
     baserom 0x36B36, 0x1
 
     .global ptr_2036B37
 ptr_2036B37:
-    .4byte 0x2036AF0
+    .4byte SongTrack_2036AF0
 
     baserom 0x36B3B, 0x2
 
@@ -3283,19 +3290,19 @@ SongTrack_2036B59:
 
     .global ptr_2036B6F
 ptr_2036B6F:
-    .4byte 0x2036B59
+    .4byte SongTrack_2036B59
 
     baserom 0x36B73, 0x1
 
     .global ptr_2036B74
 ptr_2036B74:
-    .4byte 0x2036B59
+    .4byte SongTrack_2036B59
 
     baserom 0x36B78, 0x1
 
     .global ptr_2036B79
 ptr_2036B79:
-    .4byte 0x2036B3F
+    .4byte SongTrack_2036B3F
 
     baserom 0x36B7D, 0x2
 
@@ -3309,7 +3316,7 @@ SongTrack_2036B81:
 
     .global ptr_2036C11
 ptr_2036C11:
-    .4byte 0x2036B81
+    .4byte SongTrack_2036B81
 
     baserom 0x36C15, 0x3
 
@@ -3346,19 +3353,19 @@ SongTrack_2036CB9:
 
     .global ptr_2036CD5
 ptr_2036CD5:
-    .4byte 0x2036C5F
+    .4byte SongTrack_2036C5F
 
     baserom 0x36CD9, 0x59
 
     .global ptr_2036D32
 ptr_2036D32:
-    .4byte 0x2036CB9
+    .4byte SongTrack_2036CB9
 
     baserom 0x36D36, 0x1
 
     .global ptr_2036D37
 ptr_2036D37:
-    .4byte 0x2036C4F
+    .4byte SongTrack_2036C4F
 
     baserom 0x36D3B, 0x35
 
@@ -3372,7 +3379,7 @@ SongTrack_2036D8B:
 
     .global ptr_2036D9C
 ptr_2036D9C:
-    .4byte 0x2036D8B
+    .4byte SongTrack_2036D8B
 
     baserom 0x36DA0, 0x35
 
@@ -3394,13 +3401,13 @@ SongTrack_2036DF2:
 
     .global ptr_2036DFA
 ptr_2036DFA:
-    .4byte 0x2036DF2
+    .4byte SongTrack_2036DF2
 
     baserom 0x36DFE, 0x1
 
     .global ptr_2036DFF
 ptr_2036DFF:
-    .4byte 0x2036DF2
+    .4byte SongTrack_2036DF2
 
     baserom 0x36E03, 0xA
 
@@ -3410,43 +3417,43 @@ SongTrack_2036E0D:
 
     .global ptr_2036E15
 ptr_2036E15:
-    .4byte 0x2036DE4
+    .4byte SongTrack_2036DE4
 
     baserom 0x36E19, 0x1
 
     .global ptr_2036E1A
 ptr_2036E1A:
-    .4byte 0x2036DEB
+    .4byte SongTrack_2036DEB
 
     baserom 0x36E1E, 0x1
 
     .global ptr_2036E1F
 ptr_2036E1F:
-    .4byte 0x2036DF2
+    .4byte SongTrack_2036DF2
 
     baserom 0x36E23, 0x1
 
     .global ptr_2036E24
 ptr_2036E24:
-    .4byte 0x2036DF2
+    .4byte SongTrack_2036DF2
 
     baserom 0x36E28, 0xB
 
     .global ptr_2036E33
 ptr_2036E33:
-    .4byte 0x2036E0D
+    .4byte SongTrack_2036E0D
 
     baserom 0x36E37, 0x1
 
     .global ptr_2036E38
 ptr_2036E38:
-    .4byte 0x2036DE4
+    .4byte SongTrack_2036DE4
 
     baserom 0x36E3C, 0x1
 
     .global ptr_2036E3D
 ptr_2036E3D:
-    .4byte 0x2036DE4
+    .4byte SongTrack_2036DE4
 
     baserom 0x36E41, 0x35
 
@@ -3468,19 +3475,19 @@ SongTrack_2036E99:
 
     .global ptr_2036EA6
 ptr_2036EA6:
-    .4byte 0x2036E99
+    .4byte SongTrack_2036E99
 
     baserom 0x36EAA, 0x1
 
     .global ptr_2036EAB
 ptr_2036EAB:
-    .4byte 0x2036E99
+    .4byte SongTrack_2036E99
 
     baserom 0x36EAF, 0x1
 
     .global ptr_2036EB0
 ptr_2036EB0:
-    .4byte 0x2036E99
+    .4byte SongTrack_2036E99
 
     .global SongTrack_2036EB4
 SongTrack_2036EB4:
@@ -3492,49 +3499,49 @@ SongTrack_2036EC0:
 
     .global ptr_2036ECD
 ptr_2036ECD:
-    .4byte 0x2036E81
+    .4byte SongTrack_2036E81
 
     baserom 0x36ED1, 0x1
 
     .global ptr_2036ED2
 ptr_2036ED2:
-    .4byte 0x2036E8D
+    .4byte SongTrack_2036E8D
 
     baserom 0x36ED6, 0x1
 
     .global ptr_2036ED7
 ptr_2036ED7:
-    .4byte 0x2036EC0
+    .4byte SongTrack_2036EC0
 
     baserom 0x36EDB, 0x1
 
     .global ptr_2036EDC
 ptr_2036EDC:
-    .4byte 0x2036E99
+    .4byte SongTrack_2036E99
 
     baserom 0x36EE0, 0xC
 
     .global ptr_2036EEC
 ptr_2036EEC:
-    .4byte 0x2036EB4
+    .4byte SongTrack_2036EB4
 
     baserom 0x36EF0, 0x1
 
     .global ptr_2036EF1
 ptr_2036EF1:
-    .4byte 0x2036EC0
+    .4byte SongTrack_2036EC0
 
     baserom 0x36EF5, 0x1
 
     .global ptr_2036EF6
 ptr_2036EF6:
-    .4byte 0x2036E81
+    .4byte SongTrack_2036E81
 
     baserom 0x36EFA, 0x1
 
     .global ptr_2036EFB
 ptr_2036EFB:
-    .4byte 0x2036E81
+    .4byte SongTrack_2036E81
 
     baserom 0x36EFF, 0x35
 
@@ -3556,19 +3563,19 @@ SongTrack_2036F56:
 
     .global ptr_2036FAD
 ptr_2036FAD:
-    .4byte 0x2036F3E
+    .4byte SongTrack_2036F3E
 
     baserom 0x36FB1, 0x1
 
     .global ptr_2036FB2
 ptr_2036FB2:
-    .4byte 0x2036F56
+    .4byte SongTrack_2036F56
 
     baserom 0x36FB6, 0x34
 
     .global ptr_2036FEA
 ptr_2036FEA:
-    .4byte 0x2036F3D
+    .4byte SongTrack_2036F3D
 
     baserom 0x36FEE, 0x35
 
@@ -3590,25 +3597,25 @@ SongTrack_203707E:
 
     .global ptr_2037094
 ptr_2037094:
-    .4byte 0x2037067
+    .4byte SongTrack_2037067
 
     baserom 0x37098, 0x1
 
     .global ptr_2037099
 ptr_2037099:
-    .4byte 0x203707E
+    .4byte SongTrack_203707E
 
     baserom 0x3709D, 0x1
 
     .global ptr_203709E
 ptr_203709E:
-    .4byte 0x2037067
+    .4byte SongTrack_2037067
 
     baserom 0x370A2, 0x1
 
     .global ptr_20370A3
 ptr_20370A3:
-    .4byte 0x203707E
+    .4byte SongTrack_203707E
 
     .global SongTrack_20370A7
 SongTrack_20370A7:
@@ -3620,25 +3627,25 @@ SongTrack_20370BE:
 
     .global ptr_20370E8
 ptr_20370E8:
-    .4byte 0x203707E
+    .4byte SongTrack_203707E
 
     baserom 0x370EC, 0x1
 
     .global ptr_20370ED
 ptr_20370ED:
-    .4byte 0x20370A7
+    .4byte SongTrack_20370A7
 
     baserom 0x370F1, 0x29
 
     .global ptr_203711A
 ptr_203711A:
-    .4byte 0x20370BE
+    .4byte SongTrack_20370BE
 
     baserom 0x3711E, 0x1
 
     .global ptr_203711F
 ptr_203711F:
-    .4byte 0x203703F
+    .4byte SongTrack_203703F
 
     baserom 0x37123, 0x35
 
@@ -3660,13 +3667,13 @@ SongTrack_203716E:
 
     .global ptr_2037177
 ptr_2037177:
-    .4byte 0x203716E
+    .4byte SongTrack_203716E
 
     baserom 0x3717B, 0x1
 
     .global ptr_203717C
 ptr_203717C:
-    .4byte 0x203716E
+    .4byte SongTrack_203716E
 
     baserom 0x37180, 0x7
 
@@ -3676,55 +3683,55 @@ SongTrack_2037187:
 
     .global ptr_2037190
 ptr_2037190:
-    .4byte 0x203716E
+    .4byte SongTrack_203716E
 
     baserom 0x37194, 0x1
 
     .global ptr_2037195
 ptr_2037195:
-    .4byte 0x2037166
+    .4byte SongTrack_2037166
 
     baserom 0x37199, 0x1
 
     .global ptr_203719A
 ptr_203719A:
-    .4byte 0x2037166
+    .4byte SongTrack_2037166
 
     baserom 0x3719E, 0x1
 
     .global ptr_203719F
 ptr_203719F:
-    .4byte 0x203716E
+    .4byte SongTrack_203716E
 
     baserom 0x371A3, 0x1
 
     .global ptr_20371A4
 ptr_20371A4:
-    .4byte 0x203716E
+    .4byte SongTrack_203716E
 
     baserom 0x371A8, 0x8
 
     .global ptr_20371B0
 ptr_20371B0:
-    .4byte 0x2037187
+    .4byte SongTrack_2037187
 
     baserom 0x371B4, 0x1
 
     .global ptr_20371B5
 ptr_20371B5:
-    .4byte 0x203716E
+    .4byte SongTrack_203716E
 
     baserom 0x371B9, 0x1
 
     .global ptr_20371BA
 ptr_20371BA:
-    .4byte 0x2037166
+    .4byte SongTrack_2037166
 
     baserom 0x371BE, 0x1
 
     .global ptr_20371BF
 ptr_20371BF:
-    .4byte 0x203715D
+    .4byte SongTrack_203715D
 
     baserom 0x371C3, 0x35
 
@@ -3757,85 +3764,85 @@ SongTrack_2037238:
 
     .global ptr_203724C
 ptr_203724C:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x37250, 0x1
 
     .global ptr_2037251
 ptr_2037251:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x37255, 0x1
 
     .global ptr_2037256
 ptr_2037256:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x3725A, 0x1
 
     .global ptr_203725B
 ptr_203725B:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x3725F, 0x1
 
     .global ptr_2037260
 ptr_2037260:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x37264, 0x1
 
     .global ptr_2037265
 ptr_2037265:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x37269, 0x1
 
     .global ptr_203726A
 ptr_203726A:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x3726E, 0x1
 
     .global ptr_203726F
 ptr_203726F:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x37273, 0x1
 
     .global ptr_2037274
 ptr_2037274:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x37278, 0x1
 
     .global ptr_2037279
 ptr_2037279:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x3727D, 0x1
 
     .global ptr_203727E
 ptr_203727E:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x37282, 0x1
 
     .global ptr_2037283
 ptr_2037283:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x37287, 0x1
 
     .global ptr_2037288
 ptr_2037288:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     baserom 0x3728C, 0x1
 
     .global ptr_203728D
 ptr_203728D:
-    .4byte 0x2037238
+    .4byte SongTrack_2037238
 
     .global SongTrack_2037291
 SongTrack_2037291:
@@ -3847,19 +3854,19 @@ SongTrack_20372A4:
 
     .global ptr_20372D8
 ptr_20372D8:
-    .4byte 0x2037291
+    .4byte SongTrack_2037291
 
     baserom 0x372DC, 0x1
 
     .global ptr_20372DD
 ptr_20372DD:
-    .4byte 0x20372A4
+    .4byte SongTrack_20372A4
 
     baserom 0x372E1, 0x23
 
     .global ptr_2037304
 ptr_2037304:
-    .4byte 0x203721E
+    .4byte SongTrack_203721E
 
     baserom 0x37308, 0x1
 
@@ -3873,7 +3880,7 @@ SongTrack_203730B:
 
     .global ptr_20373A5
 ptr_20373A5:
-    .4byte 0x203730B
+    .4byte SongTrack_203730B
 
     baserom 0x373A9, 0x1
 
@@ -3903,7 +3910,7 @@ SongTrack_20373DB:
 
     .global ptr_20373E6
 ptr_20373E6:
-    .4byte 0x20373BB
+    .4byte SongTrack_20373BB
 
     .global SongTrack_20373EA
 SongTrack_20373EA:
@@ -3911,49 +3918,49 @@ SongTrack_20373EA:
 
     .global ptr_20373FB
 ptr_20373FB:
-    .4byte 0x20373DB
+    .4byte SongTrack_20373DB
 
     baserom 0x373FF, 0x1
 
     .global ptr_2037400
 ptr_2037400:
-    .4byte 0x20373BB
+    .4byte SongTrack_20373BB
 
     baserom 0x37404, 0x1
 
     .global ptr_2037405
 ptr_2037405:
-    .4byte 0x20373C6
+    .4byte SongTrack_20373C6
 
     baserom 0x37409, 0x1
 
     .global ptr_203740A
 ptr_203740A:
-    .4byte 0x20373D0
+    .4byte SongTrack_20373D0
 
     baserom 0x3740E, 0x1
 
     .global ptr_203740F
 ptr_203740F:
-    .4byte 0x20373DB
+    .4byte SongTrack_20373DB
 
     baserom 0x37413, 0x1
 
     .global ptr_2037414
 ptr_2037414:
-    .4byte 0x20373BB
+    .4byte SongTrack_20373BB
 
     baserom 0x37418, 0x1
 
     .global ptr_2037419
 ptr_2037419:
-    .4byte 0x20373EA
+    .4byte SongTrack_20373EA
 
     baserom 0x3741D, 0xD
 
     .global ptr_203742A
 ptr_203742A:
-    .4byte 0x20373AC
+    .4byte SongTrack_20373AC
 
     baserom 0x3742E, 0x1
 
@@ -3967,7 +3974,7 @@ SongTrack_2037431:
 
     .global ptr_20374C3
 ptr_20374C3:
-    .4byte 0x2037431
+    .4byte SongTrack_2037431
 
     baserom 0x374C7, 0x1
 
@@ -3985,91 +3992,91 @@ SongTrack_20374E2:
 
     .global ptr_20374F6
 ptr_20374F6:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x374FA, 0x1
 
     .global ptr_20374FB
 ptr_20374FB:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x374FF, 0x1
 
     .global ptr_2037500
 ptr_2037500:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x37504, 0x1
 
     .global ptr_2037505
 ptr_2037505:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x37509, 0x1
 
     .global ptr_203750A
 ptr_203750A:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x3750E, 0x1
 
     .global ptr_203750F
 ptr_203750F:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x37513, 0x1
 
     .global ptr_2037514
 ptr_2037514:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x37518, 0x1
 
     .global ptr_2037519
 ptr_2037519:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x3751D, 0x1
 
     .global ptr_203751E
 ptr_203751E:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x37522, 0x1
 
     .global ptr_2037523
 ptr_2037523:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x37527, 0x1
 
     .global ptr_2037528
 ptr_2037528:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x3752C, 0x1
 
     .global ptr_203752D
 ptr_203752D:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x37531, 0x1
 
     .global ptr_2037532
 ptr_2037532:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x37536, 0x1
 
     .global ptr_2037537
 ptr_2037537:
-    .4byte 0x20374E2
+    .4byte SongTrack_20374E2
 
     baserom 0x3753B, 0x29
 
     .global ptr_2037564
 ptr_2037564:
-    .4byte 0x20374CA
+    .4byte SongTrack_20374CA
 
     baserom 0x37568, 0x1
 
@@ -4087,91 +4094,91 @@ SongTrack_2037584:
 
     .global ptr_2037599
 ptr_2037599:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x3759D, 0x1
 
     .global ptr_203759E
 ptr_203759E:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375A2, 0x1
 
     .global ptr_20375A3
 ptr_20375A3:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375A7, 0x1
 
     .global ptr_20375A8
 ptr_20375A8:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375AC, 0x1
 
     .global ptr_20375AD
 ptr_20375AD:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375B1, 0x1
 
     .global ptr_20375B2
 ptr_20375B2:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375B6, 0x1
 
     .global ptr_20375B7
 ptr_20375B7:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375BB, 0x1
 
     .global ptr_20375BC
 ptr_20375BC:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375C0, 0x1
 
     .global ptr_20375C1
 ptr_20375C1:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375C5, 0x1
 
     .global ptr_20375C6
 ptr_20375C6:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375CA, 0x1
 
     .global ptr_20375CB
 ptr_20375CB:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375CF, 0x1
 
     .global ptr_20375D0
 ptr_20375D0:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375D4, 0x1
 
     .global ptr_20375D5
 ptr_20375D5:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375D9, 0x1
 
     .global ptr_20375DA
 ptr_20375DA:
-    .4byte 0x2037584
+    .4byte SongTrack_2037584
 
     baserom 0x375DE, 0x23
 
     .global ptr_2037601
 ptr_2037601:
-    .4byte 0x203756B
+    .4byte SongTrack_203756B
 
     baserom 0x37605, 0x1
 
@@ -4185,7 +4192,7 @@ SongTrack_2037608:
 
     .global ptr_20376A7
 ptr_20376A7:
-    .4byte 0x2037608
+    .4byte SongTrack_2037608
 
     baserom 0x376AB, 0x2
 
@@ -4199,7 +4206,7 @@ SongTrack_20376AF:
 
     .global ptr_20376E0
 ptr_20376E0:
-    .4byte 0x20376AF
+    .4byte SongTrack_20376AF
 
     baserom 0x376E4, 0x1
 
@@ -4213,7 +4220,7 @@ SongTrack_20376E7:
 
     .global ptr_2037B4E
 ptr_2037B4E:
-    .4byte 0x20376E7
+    .4byte SongTrack_20376E7
 
     baserom 0x37B52, 0x2
 
