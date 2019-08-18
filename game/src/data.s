@@ -3251,31 +3251,31 @@ Asc_KAZ2_Size12_NML_Tbl:
 
     .global NisOptSel_Buf
 NisOptSel_Buf:
-    .word ascii2_20119D7
+    .word np_Msg_OptionSelect_00
     .word NisOptSel_np_sw_markten+1
-    .word ascii2_20119E5
+    .word np_Msg_OptionSelect_01
     .word NisOptSel_np_sw_countstop+1
-    .word ascii2_20119F3
+    .word np_Msg_OptionSelect_02
     .word NisOptSel_np_fld_bscfg+1
-    .word ascii2_2011A01
+    .word np_Msg_OptionSelect_03
     .word NisOptSel_np_sw_PanelNumber+1
-    .word ascii2_2011A0F
+    .word np_Msg_OptionSelect_04
     .word NisOptSel_np_sw_no_roll_stop+1
-    .word ascii2_2011A1D
+    .word np_Msg_OptionSelect_05
     .word NisOptSel_np_sw_ball_command+1
-    .word ascii2_2011A2D
+    .word np_Msg_OptionSelect_06
     .word NisOptSel_np_sw_Put_GOCnt+1
-    .word ascii2_2011A3B
+    .word np_Msg_OptionSelect_07
     .word NisOptSel_np_sw_OjamaKaitou+1
-    .word ascii2_2011A49
+    .word np_Msg_OptionSelect_08
     .word NisOptSel_np_sw_AgbKey_mode+1
-    .word ascii2_2011A57
+    .word np_Msg_OptionSelect_09
     .word NisOptSel_np_sw_panelanime+1
-    .word ascii2_2011A65
+    .word np_Msg_OptionSelect_0a
     .word NisOptSel_np_sw_kage_color+1
-    .word ascii2_2011A73
+    .word np_Msg_OptionSelect_0b
     .word NisOptSel_np_sw_field_color+1
-    .word ascii2_2011A83
+    .word np_Msg_OptionSelect_0c
     .word NisOptSel_np_sw_zenkeshi+1
     .word 0
     .word NisOptSel_np_sw_option_def+1
@@ -3295,7 +3295,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 5 @; nPuty
     .byte 0, 0
-    .word pad2
+    .word np_Msg_MainSelect_00
     .word np_Msg_Help_00
     .byte 0 @; nPage
     .byte 1 @; nCsl
@@ -3308,7 +3308,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 7 @; nPuty
     .byte 0, 0
-    .word pad2
+    .word np_Msg_MainSelect_00
     .word np_Msg_Help_01
     .byte 0 @; nPage
     .byte 2 @; nCsl
@@ -3321,7 +3321,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 9 @; nPuty
     .byte 0, 0
-    .word pad2
+    .word np_Msg_MainSelect_00
     .word np_Msg_Help_04
     .byte 0 @; nPage
     .byte 3 @; nCsl
@@ -3334,7 +3334,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 11 @; nPuty
     .byte 0, 0
-    .word pad2
+    .word np_Msg_MainSelect_00
     .word np_Msg_Help_02
     .byte 0 @; nPage
     .byte 4 @; nCsl
@@ -3347,7 +3347,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 13 @; nPuty
     .byte 0, 0
-    .word pad2
+    .word np_Msg_MainSelect_00
     .word np_Msg_Help_03
     .byte 1 @; nPage
     .byte 0 @; nCsl
@@ -3360,7 +3360,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 7 @; nPuty
     .byte 0, 0
-    .word ascii2_2011949
+    .word np_Msg_MainSelect_01
     .word np_Msg_Help_10
     .byte 1 @; nPage
     .byte 1 @; nCsl
@@ -3373,7 +3373,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 9 @; nPuty
     .byte 0, 0
-    .word ascii2_2011949
+    .word np_Msg_MainSelect_01
     .word np_Msg_Help_11
     .byte 1 @; nPage
     .byte 2 @; nCsl
@@ -3386,7 +3386,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 12 @; nPuty
     .byte 0, 0
-    .word ascii2_2011949
+    .word np_Msg_MainSelect_01
     .word np_Msg_Help_12
     .byte 2 @; nPage
     .byte 0 @; nCsl
@@ -3399,7 +3399,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 7 @; nPuty
     .byte 0, 0
-    .word ascii2_201197E
+    .word np_Msg_MainSelect_02
     .word np_Msg_Help_20
     .byte 2 @; nPage
     .byte 1 @; nCsl
@@ -3412,7 +3412,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 9 @; nPuty
     .byte 0, 0
-    .word ascii2_201197E
+    .word np_Msg_MainSelect_02
     .word np_Msg_Help_21
     .byte 2 @; nPage
     .byte 2 @; nCsl
@@ -3425,7 +3425,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 12 @; nPuty
     .byte 0, 0
-    .word ascii2_201197E
+    .word np_Msg_MainSelect_02
     .word np_Msg_Help_22
     .byte 3 @; nPage
     .byte 0 @; nCsl
@@ -3438,7 +3438,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 7 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_30
     .byte 3 @; nPage
     .byte 1 @; nCsl
@@ -3451,7 +3451,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 9 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_31
     .byte 3 @; nPage
     .byte 2 @; nCsl
@@ -3464,7 +3464,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 11 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_32
     .byte 3 @; nPage
     .byte 3 @; nCsl
@@ -3477,7 +3477,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 13 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_33
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3490,7 +3490,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_34
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3503,7 +3503,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_35
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3516,7 +3516,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_36
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3529,7 +3529,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_37
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3542,7 +3542,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_38
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3555,7 +3555,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_39
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3568,7 +3568,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_3a
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3581,7 +3581,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_3b
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3594,7 +3594,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_3c
     .byte 3 @; nPage
     .byte 4 @; nCsl
@@ -3607,7 +3607,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 15 @; nPuty
     .byte 0, 0
-    .word ascii2_20119B4
+    .word np_Msg_MainSelect_03
     .word np_Msg_Help_3d
     .byte 4 @; nPage
     .byte 0 @; nCsl
@@ -3620,7 +3620,7 @@ NisSelect_DT:
     .byte 2 @; nPutx
     .byte 7 @; nPuty
     .byte 0, 0
-    .word ascii2_20119BD
+    .word np_Msg_MainSelect_04
     .word np_Msg_Help_40
 
     .global NisSelectSub_pCslDat
