@@ -320,6 +320,7 @@
 	.include "functions/AS_Mascot_RndWait.s"
 	.include "functions/AS_Mascot_head_stp.s"
 	.include "functions/AS_Mascot_head_stt.s"
+	.include "functions/sub_200BAA4.s"
 	.include "functions/np_PutObjMascot_Init.s"
 	.include "functions/np_PutObjMascot_Bikkuri.s"
 	.include "functions/np_PutObjMascot_GameOver.s"
