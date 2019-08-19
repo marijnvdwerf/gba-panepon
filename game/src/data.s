@@ -4053,7 +4053,7 @@ ponagb2m_obj_Acl:
 
     .global ponagb2m_obj_Acg_LZ
 ponagb2m_obj_Acg_LZ:
-    baserom 0x1C9C4, 0x2780
+    .incbin "ponagb2m_obj.acg.lz"
 
     .global ponagb2m_bga_Acl
 ponagb2m_bga_Acl:
@@ -4061,15 +4061,15 @@ ponagb2m_bga_Acl:
 
     .global ponagb2m_bga_Acg_LZ
 ponagb2m_bga_Acg_LZ:
-    baserom 0x1F344, 0x2C20
+    .incbin "ponagb2m_bga.acg.lz"
 
     .global ponagb2m_kabe_Asc_LZ
 ponagb2m_kabe_Asc_LZ:
-    baserom 0x21F64, 0x170
+    .incbin "ponagb2m_kabe.asc.lz"
 
     .global ponagb2m_frame_Asc_LZ
 ponagb2m_frame_Asc_LZ:
-    baserom 0x220D4, 0x1E4
+    .incbin "ponagb2m_frame.asc.lz"
 
     .global ponagb2m_dark_Asc_LZ
 ponagb2m_dark_Asc_LZ:
@@ -4245,16 +4245,16 @@ ponagb2m_title_obj_Acl:
 
     .global ponagb2m_title_obj_Acg_LZ
 ponagb2m_title_obj_Acg_LZ:
-    baserom 0x22DC4, 0x184
+    .incbin "ponagb2m_title_obj.acg.lz"
 
     .global ponagb2m_title_Acl
 ponagb2m_title_Acl:
-    baserom 0x22F48, 0x200
+    .incbin "ponagb2m_title.acl"
 
     .global ponagb2m_title_Acg_LZ
 ponagb2m_title_Acg_LZ:
-    baserom 0x23148, 0x50E8
+    .incbin "ponagb2m_title.acg.lz"
 
     .global ponagb2m_title_Asc_LZ
 ponagb2m_title_Asc_LZ:
-    baserom 0x28230, 0x564
+    .incbin "ponagb2m_title.asc.lz"
