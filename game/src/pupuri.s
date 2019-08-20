@@ -379,7 +379,7 @@ Aob_Pupuri_Parts_Ani00:
     .byte 1
     .word Aob_Pupuri_Parts_11
     .byte 0xF8
-    .word 0x200B275
+    .word AS_Mascot_RndWait+1
     .byte 5
     .word Aob_Pupuri_Parts_12
     .byte 8
@@ -396,7 +396,7 @@ Aob_Pupuri_Parts_Ani01:
     .byte 1
     .word Aob_Pupuri_Parts_14
     .byte 0xF8
-    .word 0x200B275
+    .word AS_Mascot_RndWait+1
     .byte 10
     .word Aob_Pupuri_Parts_15
     .byte 4
@@ -435,7 +435,7 @@ Aob_Pupuri_Parts_Ani02:
     .byte 12
     .word Aob_Pupuri_Parts_02
     .byte 0xF8
-    .word 0x200B299
+    .word AS_Mascot_head_stt+1
     .byte 0xF5
     .word Aob_Pupuri_Parts_Ani00
 
@@ -460,7 +460,7 @@ Aob_Pupuri_Parts_Ani03:
     .byte 4
     .word Aob_Pupuri_Parts_10
     .byte 0xF8
-    .word 0x200B299
+    .word AS_Mascot_head_stt+1
     .byte 0xF5
     .word Aob_Pupuri_Parts_Ani00
 
@@ -497,7 +497,7 @@ Aob_Pupuri_Parts_Ani04:
     .byte 4
     .word Aob_Pupuri_Parts_10
     .byte 0xF8
-    .word 0x200B299
+    .word AS_Mascot_head_stt+1
     .byte 0xF5
     .word Aob_Pupuri_Parts_Ani00
 
@@ -544,7 +544,7 @@ Aob_Pupuri_Parts_Ani05:
     .byte 4
     .word Aob_Pupuri_Parts_10
     .byte 0xF8
-    .word 0x200B299
+    .word AS_Mascot_head_stt+1
     .byte 0xF5
     .word Aob_Pupuri_Parts_Ani00
 
@@ -609,7 +609,7 @@ Aob_Pupuri_Parts_Ani06:
     .byte 4
     .word Aob_Pupuri_Parts_10
     .byte 0xF8
-    .word 0x200B299
+    .word AS_Mascot_head_stt+1
     .byte 0xF5
     .word Aob_Pupuri_Parts_Ani00
 
