@@ -2,7 +2,7 @@ set(AGBCC       "/Users/Marijn/Projects/agbcc/old_agbcc" )
 set(AGBCC_INCLUDES       "/Users/Marijn/Projects/agbcc/ginclude/" )
 set(AGBCC_FLAGS " -mthumb-interwork -Wimplicit -Wparentheses -Wunused -Werror -O2 -fhex-asm")
 
-set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -Wa,-I${CMAKE_CURRENT_SOURCE_DIR}/src")
+set(CMAKE_ASM_FLAGS "${CMAKE_ASM_FLAGS} -Wa,-I${CMAKE_CURRENT_SOURCE_DIR}/src -Wa,-I${CMAKE_CURRENT_SOURCE_DIR}/res-elf")
 
 set(CMD_PP "<CMAKE_C_COMPILER> <DEFINES> <INCLUDES> -I${AGBCC_INCLUDES} -nostdinc -undef -Werror -E <SOURCE>")
 set(CMD_C "${AGBCC} ${AGBCC_FLAGS} ")
