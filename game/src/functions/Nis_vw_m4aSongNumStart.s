@@ -50,8 +50,8 @@ Nis_vw_m4aSongNumStart:
 	lsl	r0, r4, #0x10
 	lsr	r0, r0, #0x10
 	bl	m4aSongNumStart
-	ldr	r2, .LNis_vw_m4aSongNumStart_8 @ ponagb2m_title_Asc_LZ+0x1248
-	ldr	r1, .LNis_vw_m4aSongNumStart_8 + 4 @ ponagb2m_title_Asc_LZ+0x12a8
+	ldr	r2, .LNis_vw_m4aSongNumStart_8 @ mplay_table
+	ldr	r1, .LNis_vw_m4aSongNumStart_8 + 4 @ song_table
 	lsl	r0, r4, #0x3
 	add	r0, r0, r1
 	ldrh	r1, [r0, #0x4]
@@ -78,6 +78,6 @@ Nis_vw_m4aSongNumStart:
 .LNis_vw_m4aSongNumStart_9:
 	.align	2, 0
 .LNis_vw_m4aSongNumStart_8:
-	.word	ponagb2m_title_Asc_LZ+0x1248
-	.word	ponagb2m_title_Asc_LZ+0x12a8
+	.word	mplay_table
+	.word	song_table
 	thumb_func_end Nis_vw_m4aSongNumStart

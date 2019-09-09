@@ -34,8 +34,8 @@ nis_pause_init:
 	add	r1, r4, r0
 	mov	r0, #0x3
 	strb	r0, [r1]
-	ldr	r2, .Lnis_pause_init_1 + 32 @ ponagb2m_title_Asc_LZ+0x1248
-	ldr	r0, .Lnis_pause_init_1 + 36 @ ponagb2m_title_Asc_LZ+0x12a8
+	ldr	r2, .Lnis_pause_init_1 + 32 @ mplay_table
+	ldr	r0, .Lnis_pause_init_1 + 36 @ song_table
 	mov	r1, #0xcb
 	lsl	r1, r1, #0x2
 	add	r0, r0, r1
@@ -68,7 +68,7 @@ nis_pause_init:
 	.word	0xae8
 	.word	0xae3
 	.word	0xae4
-	.word	ponagb2m_title_Asc_LZ+0x1248
-	.word	ponagb2m_title_Asc_LZ+0x12a8
+	.word	mplay_table
+	.word	song_table
 	.word	0xae6
 	thumb_func_end nis_pause_init

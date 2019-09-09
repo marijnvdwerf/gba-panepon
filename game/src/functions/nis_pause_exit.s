@@ -22,8 +22,8 @@ nis_pause_exit:
 	ldr	r1, .Lnis_pause_exit_1 + 24 @ 0xae1
 	add	r0, r4, r1
 	strb	r2, [r0]
-	ldr	r2, .Lnis_pause_exit_1 + 28 @ ponagb2m_title_Asc_LZ+0x1248
-	ldr	r0, .Lnis_pause_exit_1 + 32 @ ponagb2m_title_Asc_LZ+0x12a8
+	ldr	r2, .Lnis_pause_exit_1 + 28 @ mplay_table
+	ldr	r0, .Lnis_pause_exit_1 + 32 @ song_table
 	mov	r3, #0xcb
 	lsl	r3, r3, #0x2
 	add	r0, r0, r3
@@ -56,7 +56,7 @@ nis_pause_exit:
 	.word	0xaec
 	.word	KeyRead_Para_RT
 	.word	0xae1
-	.word	ponagb2m_title_Asc_LZ+0x1248
-	.word	ponagb2m_title_Asc_LZ+0x12a8
+	.word	mplay_table
+	.word	song_table
 	.word	0xae6
 	thumb_func_end nis_pause_exit

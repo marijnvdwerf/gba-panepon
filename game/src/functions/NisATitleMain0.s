@@ -25,8 +25,8 @@ NisATitleMain0:
 	ldr	r1, .LNisATitleMain0_3 + 8 @ SelRam
 	mov	r0, #0x4b
 	strb	r0, [r1, #0x10]
-	ldr	r2, .LNisATitleMain0_3 + 12 @ ponagb2m_title_Asc_LZ+0x1248
-	ldr	r0, .LNisATitleMain0_3 + 16 @ ponagb2m_title_Asc_LZ+0x12a8
+	ldr	r2, .LNisATitleMain0_3 + 12 @ mplay_table
+	ldr	r0, .LNisATitleMain0_3 + 16 @ song_table
 	mov	r1, #0xd5
 	lsl	r1, r1, #0x2
 	add	r0, r0, r1
@@ -49,7 +49,7 @@ NisATitleMain0:
 	.word	Aob_Title_Obj_00
 	.word	KeyRead_Trg
 	.word	SelRam
-	.word	ponagb2m_title_Asc_LZ+0x1248
-	.word	ponagb2m_title_Asc_LZ+0x12a8
+	.word	mplay_table
+	.word	song_table
 	.word	NisATitleMain1 + 1
 	thumb_func_end NisATitleMain0

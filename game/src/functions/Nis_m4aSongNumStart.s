@@ -17,8 +17,8 @@ Nis_m4aSongNumStart:
 	lsl	r0, r4, #0x10
 	lsr	r0, r0, #0x10
 	bl	m4aSongNumStart
-	ldr	r2, .LNis_m4aSongNumStart_4 @ ponagb2m_title_Asc_LZ+0x1248
-	ldr	r1, .LNis_m4aSongNumStart_4 + 4 @ ponagb2m_title_Asc_LZ+0x12a8
+	ldr	r2, .LNis_m4aSongNumStart_4 @ mplay_table
+	ldr	r1, .LNis_m4aSongNumStart_4 + 4 @ song_table
 	lsl	r0, r4, #0x3
 	add	r0, r0, r1
 	ldrh	r1, [r0, #0x4]
@@ -40,6 +40,6 @@ Nis_m4aSongNumStart:
 .LNis_m4aSongNumStart_5:
 	.align	2, 0
 .LNis_m4aSongNumStart_4:
-	.word	ponagb2m_title_Asc_LZ+0x1248
-	.word	ponagb2m_title_Asc_LZ+0x12a8
+	.word	mplay_table
+	.word	song_table
 	thumb_func_end Nis_m4aSongNumStart
