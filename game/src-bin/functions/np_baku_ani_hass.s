@@ -42,12 +42,12 @@ np_baku_ani_hass:
 .Lnp_baku_ani_hass_15:
 	.word	Aob_Panel_Baku_Ani01
 .Lnp_baku_ani_hass_8:
-	ldr	r0, .Lnp_baku_ani_hass_18 @ Aob_Panel_Baku_Ani01+0x60
+	ldr	r0, .Lnp_baku_ani_hass_18 @ Aob_Panel_Baku_Ani02
 	b	.Lnp_baku_ani_hass_17
 .Lnp_baku_ani_hass_19:
 	.align	2, 0
 .Lnp_baku_ani_hass_18:
-	.word	Aob_Panel_Baku_Ani01+0x60
+	.word	Aob_Panel_Baku_Ani02
 .Lnp_baku_ani_hass_10:
 	ldr	r0, .Lnp_baku_ani_hass_20 @ Aob_Panel_Baku_Ani03
 .Lnp_baku_ani_hass_17:
