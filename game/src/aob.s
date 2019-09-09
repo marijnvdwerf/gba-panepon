@@ -142,7 +142,9 @@ Aob_Panel_Select_0a:
 Aob_Panel_Select_0b:
     baserom 0x9F0, 0x8
 
+#if VERSION == 0
 .include "baku.s"
+#endif
 .include "pupuri.s"
 
     .global Aob_Title_Obj_00
@@ -151,5 +153,9 @@ Aob_Title_Obj_00:
     .2byte 0x4000, 0x8000, 0x0000
     .2byte 0x4000, 0x8020, 0x0004
     .2byte 0x0000, 0x4040, 0x0008
+
+#if VERSION >= 1
+.include "baku.s"
+#endif
 
 .align 2, 0

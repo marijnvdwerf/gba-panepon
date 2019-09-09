@@ -1,4 +1,4 @@
-
+#if VERSION == 0
 .global Aob_panel_test
 Aob_panel_test:
     .2byte 2
@@ -6,3 +6,4 @@ Aob_panel_test:
     .2byte 0, 0x4000, 0x2004
 
 .align 2, 0
+#endif

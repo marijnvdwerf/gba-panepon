@@ -7,12 +7,26 @@
 .endm
 
 .bss
+#if VERSION == 0
     bs counter.153, 0x4
     bs count.268, 0x4
     bs joy_reboot_count.1082, 0x4
     bs joy_reboot_count_work.1083, 0x4
     bs g_bEnableJoyReboot, 0x4
     bs joy_timeout_counter, 0x4
+#else
+    bs g_bEnableJoyReboot, 0x4
+    bs pad6, 0x4
+    bs counter.153, 0x4
+    bs count.268, 0x4
+    bs pad7, 0x54
+    bs joy_reboot_count.1082, 0x4
+    bs joy_reboot_count_work.1083, 0x4
+    bs np_fadr_xy_X, 0x4
+    bs np_fadr_xy_Y, 0x4
+    bs joy_timeout_counter, 0x4
+    bs pad8, 0x150
+#endif
     bs OamBak, 0x400
     bs OamIdx, 0x2
     bs OamParaId0, 0x2

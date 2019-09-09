@@ -13,12 +13,14 @@ u8 NisRnd_Shu[0x4] = {1};
 u8 KeyRead_Para_ST[0x4] = {1};
 u8 MainSeqIdx[0x8] = {1};
 u8 PrbRam[0x20C] = {1};
+#if VERSION == 0
 u8 np_fadr_xy_Y[0x4] = {1};
 u8 np_fadr_xy_X[0x4] = {1};
+#endif
 u8 NisChk_SpeedFG[0x4] = {1};
 u8 KeyRead_Now[0x4] = {1};
 u8 NisRnd_Idx[0x4] = {1};
-u8 KeyRead_Trg[0x10] = {1};
+u8 KeyRead_Trg[8] = {1};
 u8 Svrm[0x10] = {1};
 u8 MDCPC_BUF_Help[0x18] = {1};
 u8 KeyRead_Para_RT[0x4] = {1};
@@ -30,7 +32,11 @@ u8 b_BG3HOFS[0x4] = {1};
 u8 SelRam[0x14] = {1};
 u8 NmiInc[0x4] = {1};
 u8 b_BG2VOFS[0x8] = {1};
+#if VERSION == 0
 u8 NRam[0xC64] = {1};
+#elif VERSION == 1
+u8 NRam[0xC64-0x80] = {1};
+#endif
 u8 np_ojm_search_head_BCreg[0x4] = {1};
 u8 np_ojm_search_head_Areg[0x4] = {1};
 u8 b_BG3VOFS[0x4] = {1};
