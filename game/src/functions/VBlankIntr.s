@@ -7,7 +7,7 @@ VBlankIntr:
 	ldr	r0, [r1]
 	add	r0, r0, #0x1
 	str	r0, [r1]
-	ldr	r1, .LVBlankIntr_1 + 4 @ SoundMainBuf+0x5848
+	ldr	r1, .LVBlankIntr_1 + 4 @ 0x3007FF8
 	mov	r0, #0x1
 	strh	r0, [r1]
 	bl	GBAJoyIntr
@@ -17,5 +17,5 @@ VBlankIntr:
 	.align	2, 0
 .LVBlankIntr_1:
 	.word	NmiInc
-	.word	SoundMainBuf+0x5848
+	.word	0x3007FF8
 	thumb_func_end VBlankIntr
