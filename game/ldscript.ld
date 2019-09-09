@@ -14,7 +14,7 @@ SECTIONS
     .text :
     ALIGN(4)
     {
-        */crt0_multi_boot.s.obj(.crt0);
+        *(.crt0);
         */dummy.s.obj(.text);
         */aob.s.obj(.text);
         */src.s.obj(.text);

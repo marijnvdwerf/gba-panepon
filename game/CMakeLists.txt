@@ -11,8 +11,8 @@ set(CMAKE_C_COMPILE_OBJECT "(( ${CMD_PP} | ${CMD_C} -o - ) && echo '.text\\n\\t.
 set(CMAKE_C_CREATE_ASSEMBLY_SOURCE "(( ${CMD_PP} | ${CMD_C} -o - ) && echo '.text\\n\\t.align\\t2, 0\\n') > <ASSEMBLY_SOURCE>")
 
 
+set(JOYBOOT src/crt0_joy_boot.s)
 set(SOURCES
-    src/crt0_multi_boot.s
     src/dummy.s
     src/aob.s
     src/src.s
@@ -26,7 +26,7 @@ set(SOURCES
     src/data.s
     src/sound3.s)
 
-add_executable(hello ${SOURCES})
+add_executable(hello ${JOYBOOT} ${SOURCES})
 target_compile_definitions(hello PRIVATE -DBASEROM=${BASEROM})
 target_link_libraries(hello PRIVATE  m4a agbsyscall isagb gcc newlib )
 
