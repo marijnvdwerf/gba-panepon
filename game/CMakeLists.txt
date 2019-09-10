@@ -28,8 +28,7 @@ function(add_rom)
     cmake_parse_arguments(ADD_ROM "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
     list(TRANSFORM ADD_ROM_INCLUDE PREPEND "-Wa,-I")
-    list(JOIN ADD_ROM_INCLUDE " " COMPILE_OPTIONS)
-    set(COMPILE_OPTIONS "$<$<COMPILE_LANGUAGE:ASM>:${COMPILE_OPTIONS}>")
+    set(COMPILE_OPTIONS "$<$<COMPILE_LANGUAGE:ASM>:${ADD_ROM_INCLUDE}>")
 
     set(MAPFILE "${ADD_ROM_NAME}.map")
     add_executable(${ADD_ROM_NAME} ${ADD_ROM_SOURCES})
