@@ -91,3 +91,14 @@ add_rom(
         ${CMAKE_CURRENT_SOURCE_DIR}/res
     SHA 051b28316b3de9cb30260c4b6213ae8ed9d57792
 )
+
+add_rom(
+    NAME ponagb2m_client
+    SOURCES ${JOYBOOT} ${SOURCES}
+    VERSION 1
+    INCLUDE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/res
+)
