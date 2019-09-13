@@ -7,6 +7,14 @@ addons:
     update: true
     packages:
       - cmake
+install:
+  - pushd $HOME
+  - wget https://github.com/devkitPro/pacman/releases/download/devkitpro-pacman-1.0.1/devkitpro-pacman.deb
+  - sudo dpkg -i devkitpro-pacman.deb
+  - sudo dkp-pacman -Sy
+  - sudo dkp-pacman -Syu
+  - sudo dkp-pacman -S -v --noconfirm gba-dev devkitARM
+  - popd
 script:
   - mkdir -p build
   - cd build
