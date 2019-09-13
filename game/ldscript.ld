@@ -93,7 +93,11 @@ SECTIONS
 	    */libc.a:syscalls.o(.rodata);
 	} >ewram
 
-	.bss2 0x2039000 (NOLOAD) :
+    . += 0x200;
+    . = ALIGN(0x1000);
+    . = MAX(., 0x2038000);
+
+    .bss2 . (NOLOAD) :
     ALIGN(4)
 	{
 	    */data.c.obj(.data);
