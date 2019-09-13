@@ -13,7 +13,9 @@ install:
   - sudo dpkg -i devkitpro-pacman.deb
   - sudo dkp-pacman -Sy
   - sudo dkp-pacman -Syu
-  - sudo dkp-pacman -S -v --noconfirm gba-dev devkitARM
+  - sudo dkp-pacman -S -v --noconfirm devkitARM
+  - export DEVKITPRO=/opt/devkitpro
+  - export DEVKITARM=${DEVKITPRO}/devkitARM
   - popd
 script:
   - mkdir -p build
