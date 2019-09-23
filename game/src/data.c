@@ -20,7 +20,11 @@ u8 np_fadr_xy_X[0x4] = {1};
 u8 NisChk_SpeedFG[0x4] = {1};
 u8 KeyRead_Now[0x4] = {1};
 u8 NisRnd_Idx[0x4] = {1};
+#if VERSION == 0
+u8 KeyRead_Trg[0x10] = {1};
+#else
 u8 KeyRead_Trg[8] = {1};
+#endif
 u8 Svrm[0x10] = {1};
 u8 MDCPC_BUF_Help[0x18] = {1};
 u8 KeyRead_Para_RT[0x4] = {1};
