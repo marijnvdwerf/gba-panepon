@@ -3333,7 +3333,7 @@ haba.39:
 
     .global ponagb2m_obj_Acl
 ponagb2m_obj_Acl:
-    baserom 0x1C7C4, 0x200
+    .incbin "ponagb2m_obj.acl"
 
     .global ponagb2m_obj_Acg_LZ
 ponagb2m_obj_Acg_LZ:
@@ -3341,7 +3341,7 @@ ponagb2m_obj_Acg_LZ:
 
     .global ponagb2m_bga_Acl
 ponagb2m_bga_Acl:
-    baserom 0x1F144, 0x200
+    .incbin "ponagb2m_bga.acl"
 
     .global ponagb2m_bga_Acg_LZ
 ponagb2m_bga_Acg_LZ:
@@ -3357,175 +3357,203 @@ ponagb2m_frame_Asc_LZ:
 
     .global ponagb2m_dark_Asc_LZ
 ponagb2m_dark_Asc_LZ:
-    baserom 0x222B8, 0xAC
+    .incbin "ponagb2m_dark.asc.lz"
 
     .global ponagb2m_gameover_Asc_LZ
 ponagb2m_gameover_Asc_LZ:
-    baserom 0x22364, 0x168
+    .incbin "ponagb2m_gameover.asc.lz"
 
     .global ponagb2m_pause_Asc_LZ
 ponagb2m_pause_Asc_LZ:
-    baserom 0x224CC, 0x114
+    .incbin "ponagb2m_pause.asc.lz"
 
     .global ponagb2m_select_Asc_LZ
 ponagb2m_select_Asc_LZ:
-    baserom 0x225E0, 0x10C
+    .incbin "ponagb2m_select.asc.lz"
 
     .global ponagb2m_sel_help_Asc_LZ
 ponagb2m_sel_help_Asc_LZ:
-    baserom 0x226EC, 0xF8
+    .incbin "ponagb2m_sel_help.asc.lz"
 
     .global ponagb2m_sel_pupu_Asc_LZ
 ponagb2m_sel_pupu_Asc_LZ:
-    baserom 0x227E4, 0x134
+    .incbin "ponagb2m_sel_pupu.asc.lz"
 
     .global np1p_game_frame_Asc_OjamaLv
 np1p_game_frame_Asc_OjamaLv:
-    baserom 0x22918, 0x10
+    .incbin "np1p_game_frame/OjamaLv.asc"
 
+    .align 2
     .global np1p_game_frame_Asc_SpeedLv
 np1p_game_frame_Asc_SpeedLv:
-    baserom 0x22928, 0x10
+    .incbin "np1p_game_frame/SpeedLv.asc"
 
+    .align 2
     .global np1p_game_frame_Asc_SLOW1
 np1p_game_frame_Asc_SLOW1:
-    baserom 0x22938, 0x18
+    .incbin "np1p_game_frame/SLOW1.asc"
 
     .global np1p_game_frame_Asc_SLOW2
 np1p_game_frame_Asc_SLOW2:
-    baserom 0x22950, 0x18
+    .incbin "np1p_game_frame/SLOW2.asc"
 
     .global np1p_game_frame_Asc_SLOW3
 np1p_game_frame_Asc_SLOW3:
-    baserom 0x22968, 0x18
+    .incbin "np1p_game_frame/SLOW3.asc"
 
     .global np1p_game_frame_Asc_EASY
 np1p_game_frame_Asc_EASY:
-    baserom 0x22980, 0x18
+    .incbin "np1p_game_frame/EASY.asc"
 
     .global np1p_game_frame_Asc_NORMAL
 np1p_game_frame_Asc_NORMAL:
-    baserom 0x22998, 0x18
+    .incbin "np1p_game_frame/NORMAL.asc"
 
     .global np1p_game_frame_Asc_HARD
 np1p_game_frame_Asc_HARD:
-    baserom 0x229B0, 0x18
+    .incbin "np1p_game_frame/HARD.asc"
 
     .global np1p_game_frame_Asc_S_HARD
 np1p_game_frame_Asc_S_HARD:
-    baserom 0x229C8, 0x18
+    .incbin "np1p_game_frame/S_HARD.asc"
 
     .global np1p_game_frame_Asc_V_HARD
 np1p_game_frame_Asc_V_HARD:
-    baserom 0x229E0, 0x18
+    .incbin "np1p_game_frame/V_HARD.asc"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Nml
 ponagb2m_kabe_Acl_Nml:
-    baserom 0x229F8, 0x20
+    .incbin "ponagb2m_kabe/Nml.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Blk
 ponagb2m_kabe_Acl_Blk:
-    baserom 0x22A18, 0x20
+    .incbin "ponagb2m_kabe/Blk.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Red
 ponagb2m_kabe_Acl_Red:
-    baserom 0x22A38, 0x20
+    .incbin "ponagb2m_kabe/Red.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Grn
 ponagb2m_kabe_Acl_Grn:
-    baserom 0x22A58, 0x20
+    .incbin "ponagb2m_kabe/Grn.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Blu
 ponagb2m_kabe_Acl_Blu:
-    baserom 0x22A78, 0x20
+    .incbin "ponagb2m_kabe/Blu.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Ylw
 ponagb2m_kabe_Acl_Ylw:
-    baserom 0x22A98, 0x20
+    .incbin "ponagb2m_kabe/Ylw.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Mur
 ponagb2m_kabe_Acl_Mur:
-    baserom 0x22AB8, 0x20
+    .incbin "ponagb2m_kabe/Mur.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Miz
 ponagb2m_kabe_Acl_Miz:
-    baserom 0x22AD8, 0x20
+    .incbin "ponagb2m_kabe/Miz.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Wht
 ponagb2m_kabe_Acl_Wht:
-    baserom 0x22AF8, 0x20
+    .incbin "ponagb2m_kabe/Wht.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Blk1
 ponagb2m_kabe_Acl_Blk1:
-    baserom 0x22B18, 0x20
+    .incbin "ponagb2m_kabe/Blk1.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Red1
 ponagb2m_kabe_Acl_Red1:
-    baserom 0x22B38, 0x20
+    .incbin "ponagb2m_kabe/Red1.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Grn1
 ponagb2m_kabe_Acl_Grn1:
-    baserom 0x22B58, 0x20
+    .incbin "ponagb2m_kabe/Grn1.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Blu1
 ponagb2m_kabe_Acl_Blu1:
-    baserom 0x22B78, 0x20
+    .incbin "ponagb2m_kabe/Blu1.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Ylw1
 ponagb2m_kabe_Acl_Ylw1:
-    baserom 0x22B98, 0x20
+    .incbin "ponagb2m_kabe/Ylw1.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Mur1
 ponagb2m_kabe_Acl_Mur1:
-    baserom 0x22BB8, 0x20
+    .incbin "ponagb2m_kabe/Mur1.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Miz1
 ponagb2m_kabe_Acl_Miz1:
-    baserom 0x22BD8, 0x20
+    .incbin "ponagb2m_kabe/Miz1.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Wht1
 ponagb2m_kabe_Acl_Wht1:
-    baserom 0x22BF8, 0x20
+    .incbin "ponagb2m_kabe/Wht1.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Blk2
 ponagb2m_kabe_Acl_Blk2:
-    baserom 0x22C18, 0x20
+    .incbin "ponagb2m_kabe/Blk2.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Red2
 ponagb2m_kabe_Acl_Red2:
-    baserom 0x22C38, 0x20
+    .incbin "ponagb2m_kabe/Red2.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Grn2
 ponagb2m_kabe_Acl_Grn2:
-    baserom 0x22C58, 0x20
+    .incbin "ponagb2m_kabe/Grn2.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Blu2
 ponagb2m_kabe_Acl_Blu2:
-    baserom 0x22C78, 0x20
+    .incbin "ponagb2m_kabe/Blu2.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Ylw2
 ponagb2m_kabe_Acl_Ylw2:
-    baserom 0x22C98, 0x20
+    .incbin "ponagb2m_kabe/Ylw2.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Mur2
 ponagb2m_kabe_Acl_Mur2:
-    baserom 0x22CB8, 0x20
+    .incbin "ponagb2m_kabe/Mur2.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Miz2
 ponagb2m_kabe_Acl_Miz2:
-    baserom 0x22CD8, 0x20
+    .incbin "ponagb2m_kabe/Miz2.acl"
 
+    .align 2
     .global ponagb2m_kabe_Acl_Wht2
 ponagb2m_kabe_Acl_Wht2:
-    baserom 0x22CF8, 0x20
+    .incbin "ponagb2m_kabe/Wht2.acl"
 
+    .align 2
     .global ponagb2m_GAME_OVER_CLC_Acl
 ponagb2m_GAME_OVER_CLC_Acl:
-    baserom 0x22D18, 0x8C
+    .incbin "ponagb2m_GAME_OVER_CLC.acl"
 
     .global ponagb2m_title_obj_Acl
 ponagb2m_title_obj_Acl:
-    baserom 0x22DA4, 0x20
+    .incbin "ponagb2m_title_obj.acl"
 
     .global ponagb2m_title_obj_Acg_LZ
 ponagb2m_title_obj_Acg_LZ:
