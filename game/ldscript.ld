@@ -79,6 +79,7 @@ SECTIONS
 	    */data.s.obj(.rodata);
 	    */libm4a.a:*(.rodata);
 	    */sounddata2.s.obj(.rodata);
+	    */libsound.a:*(.rodata);
 	    */libisagb.a:*(.rodata);
     } >ewram
 
