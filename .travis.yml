@@ -16,6 +16,9 @@ install:
   - sudo dkp-pacman -S -v --noconfirm devkitARM
   - export DEVKITPRO=/opt/devkitpro
   - export DEVKITARM=${DEVKITPRO}/devkitARM
+  - travis_retry git clone https://github.com/pret/agbcc.git
+  - cd agbcc && ./build.sh
+  - export AGBCC=$(pwd)
   - popd
 script:
   - dd if=/dev/zero of=baserom.gba bs=256K count=1
