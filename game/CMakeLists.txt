@@ -55,8 +55,8 @@ set(CMAKE_ASM_BASE_FLAGS ${CMAKE_ASM_FLAGS})
 set(CMD_PP "<CMAKE_C_COMPILER> <DEFINES> <INCLUDES> -I${AGBCC_INCLUDES} -nostdinc -undef -Werror -E <SOURCE>")
 set(CMD_C "${AGBCC_OLD} ${AGBCC_FLAGS} ")
 set(CMD_AS "${CMAKE_ASM_COMPILER} ${CMAKE_ASM_ARCHITECTURE_FLAGS} -x assembler")
-set(CMAKE_C_COMPILE_OBJECT "(( ${CMD_PP} | ${CMD_C} -o - ) && echo '.text\\n\\t.align\\t2, 0\\n') | ${CMD_AS} -o <OBJECT> -c -")
-set(CMAKE_C_CREATE_ASSEMBLY_SOURCE "(( ${CMD_PP} | ${CMD_C} -o - ) && echo '.text\\n\\t.align\\t2, 0\\n') > <ASSEMBLY_SOURCE>")
+set(CMAKE_C_COMPILE_OBJECT "(( ${CMD_PP} | ${CMD_C} -g -o - ) && echo '.text\\n\\t.align\\t2, 0\\n')  | ${CMD_AS} -o <OBJECT> -c -")
+set(CMAKE_C_CREATE_ASSEMBLY_SOURCE "(( ${CMD_PP} | ${CMD_C} -g -o - ) && echo '.text\\n\\t.align\\t2, 0\\n') > <ASSEMBLY_SOURCE>")
 
 
 set(CMAKE_C_LINKER_WRAPPER_FLAG "")
