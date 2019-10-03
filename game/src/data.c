@@ -1,64 +1,60 @@
-typedef unsigned char u8;
-typedef     unsigned int            u32;
+#include <gba/gba.h>
 
-
-u8 CRAM_BGA_SCR_GameFrame[0x800] = {1};
-u8 MDCPC_BUF_Main[0x18] = {1};
-u8 b_BG1VOFS[0x4] = {1};
-u8 b_BG2HOFS[0x4] = {1};
-u8 KeyRead_Rpt[0x10] = {1};
-u8 ARam[0x9C] = {1};
-u8 b_BG0HOFS[0x4] = {1};
-u8 NisRnd_Shu[0x4] = {1};
-u8 KeyRead_Para_ST[0x4] = {1};
-u8 MainSeqIdx[0x8] = {1};
-u8 PrbRam[0x20C] = {1};
+u8 CRAM_BGA_SCR_GameFrame[0x800] = { 1 };
+u8 MDCPC_BUF_Main[0x18] = { 1 };
+u8 b_BG1VOFS[0x4] = { 1 };
+u8 b_BG2HOFS[0x4] = { 1 };
+u8 KeyRead_Rpt[0x10] = { 1 };
+u8 ARam[0x9C] = { 1 };
+u8 b_BG0HOFS[0x4] = { 1 };
+u8 NisRnd_Shu[0x4] = { 1 };
+u8 KeyRead_Para_ST[0x4] = { 1 };
+u8 MainSeqIdx[0x8] = { 1 };
+u8 PrbRam[0x20C] = { 1 };
 #if VERSION == 0
-u8 np_fadr_xy_Y[0x4] = {1};
-u8 np_fadr_xy_X[0x4] = {1};
+u8 np_fadr_xy_Y[0x4] = { 1 };
+u8 np_fadr_xy_X[0x4] = { 1 };
 #endif
-u8 NisChk_SpeedFG[0x4] = {1};
-u8 KeyRead_Now[0x4] = {1};
-u8 NisRnd_Idx[0x4] = {1};
+u8 NisChk_SpeedFG[0x4] = { 1 };
+u8 KeyRead_Now[0x4] = { 1 };
+u8 NisRnd_Idx[0x4] = { 1 };
 #if VERSION == 0
-u8 KeyRead_Trg[0x10] = {1};
+u8 KeyRead_Trg[0x10] = { 1 };
 #else
-u8 KeyRead_Trg[8] = {1};
+u8 KeyRead_Trg[8] = { 1 };
 #endif
-u8 Svrm[0x10] = {1};
-u8 MDCPC_BUF_Help[0x18] = {1};
-u8 KeyRead_Para_RT[0x4] = {1};
-u8 b_BG0VOFS[0x4] = {1};
-u8 b_BG1HOFS[0x4] = {1};
-u8 KeyRead_NowBf[0x4] = {1};
-u8 KeyRead_RptCt[0x4] = {1};
-u8 b_BG3HOFS[0x4] = {1};
-u8 SelRam[0x14] = {1};
-u8 NmiInc[0x4] = {1};
-u8 b_BG2VOFS[0x8] = {1};
+u8 Svrm[0x10] = { 1 };
+u8 MDCPC_BUF_Help[0x18] = { 1 };
+u8 KeyRead_Para_RT[0x4] = { 1 };
+u8 b_BG0VOFS[0x4] = { 1 };
+u8 b_BG1HOFS[0x4] = { 1 };
+u8 KeyRead_NowBf[0x4] = { 1 };
+u8 KeyRead_RptCt[0x4] = { 1 };
+u8 b_BG3HOFS[0x4] = { 1 };
+u8 SelRam[0x14] = { 1 };
+u8 NmiInc[0x4] = { 1 };
+u8 b_BG2VOFS[0x8] = { 1 };
 #if VERSION == 0
-u8 NRam[0xC64] = {1};
+u8 NRam[0xC64] = { 1 };
 #elif VERSION == 1
-u8 NRam[0xC64-0x80] = {1};
+u8 NRam[0xC64 - 0x80] = { 1 };
 #endif
-u8 np_ojm_search_head_BCreg[0x4] = {1};
-u8 np_ojm_search_head_Areg[0x4] = {1};
-u8 b_BG3VOFS[0x4] = {1};
-u8 m4a_sound[0xFB0] = {1};
-u8 m4a_mplay005[0x40] = {1};
-u8 m4a_mplay006[0x40] = {1};
-u8 m4a_mplay000[0x40] = {1};
-u8 ExtMPlyJmpTbl[0x90] = {1};
-u8 m4a_cgbchn[0x100] = {1};
-u8 m4a_mplay007[0x40] = {1};
-u8 m4a_mplay001[0x40] = {1};
-u8 m4a_mplay002[0x40] = {1};
-u8 m4a_mplay004[0x40] = {1};
-u8 m4a_memacc_area[0x10] = {1};
-u8 m4a_mplay003[0x40] = {1};
-u8 irq_func_table_ram[0x3C] = {1};
-
-
+u8 np_ojm_search_head_BCreg[0x4] = { 1 };
+u8 np_ojm_search_head_Areg[0x4] = { 1 };
+u8 b_BG3VOFS[0x4] = { 1 };
+u8 m4a_sound[0xFB0] = { 1 };
+u8 m4a_mplay005[0x40] = { 1 };
+u8 m4a_mplay006[0x40] = { 1 };
+u8 m4a_mplay000[0x40] = { 1 };
+u8 ExtMPlyJmpTbl[0x90] = { 1 };
+u8 m4a_cgbchn[0x100] = { 1 };
+u8 m4a_mplay007[0x40] = { 1 };
+u8 m4a_mplay001[0x40] = { 1 };
+u8 m4a_mplay002[0x40] = { 1 };
+u8 m4a_mplay004[0x40] = { 1 };
+u8 m4a_memacc_area[0x10] = { 1 };
+u8 m4a_mplay003[0x40] = { 1 };
+u8 irq_func_table_ram[0x3C] = { 1 };
 
 /*
 const u8 np_Msg_Help_00[0x272] = {1};
@@ -217,5 +213,3 @@ const u8 ponagb2m_title_Asc_LZ[0x564] = {1};*/
 
 const u8 mplay_table[8];
 const u8 song_table[8];
-
-
