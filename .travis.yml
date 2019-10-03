@@ -24,7 +24,6 @@ install:
   - export POKERUBY=$(pwd)
   - popd
 script:
-  - dd if=/dev/zero of=baserom.gba bs=256K count=1
   - mkdir -p build
   - cd build
   - /usr/bin/cmake -DCMAKE_TOOLCHAIN_FILE=../gba.toolchain.cmake ..

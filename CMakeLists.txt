@@ -9,8 +9,6 @@ set(AGBCC_OLD "${AGBCC_DIR}/old_agbcc")
 set(AGBCC "${AGBCC_DIR}/agbcc")
 set(AGBCC_INCLUDES "${AGBCC_DIR}/ginclude/")
 
-set(BASEROM ${CMAKE_CURRENT_SOURCE_DIR}/baserom.gba)
-
 add_library(gcc STATIC IMPORTED)
 set_target_properties(gcc PROPERTIES IMPORTED_LOCATION "${AGBCC_DIR}/libgcc.a")
 

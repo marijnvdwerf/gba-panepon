@@ -2,10 +2,6 @@
 #define STRINGIFY(x) XSTRINGIFY(x)
 #define XSTRINGIFY(x) #x
 
-    .macro baserom start, size
-    .incbin STRINGIFY(BASEROM), \start, \size
-    .endm
-
 	.macro thumb_func_start name
 	    .align 2, 0
 	    .global \name

@@ -32,7 +32,7 @@ function(add_rom)
 
     set(MAPFILE "${ADD_ROM_NAME}.map")
     add_executable(${ADD_ROM_NAME} ${ADD_ROM_SOURCES})
-    target_compile_definitions(${ADD_ROM_NAME} PRIVATE -DBASEROM=${BASEROM} -DVERSION=${ADD_ROM_VERSION})
+    target_compile_definitions(${ADD_ROM_NAME} PRIVATE -DVERSION=${ADD_ROM_VERSION})
     target_compile_options(${ADD_ROM_NAME} PRIVATE ${COMPILE_OPTIONS})
     target_link_libraries(${ADD_ROM_NAME} PRIVATE gba m4a agbsyscall isagb gcc newlib sound)
     target_link_options(${ADD_ROM_NAME} PRIVATE "LINKER:-Map=${MAPFILE}")
