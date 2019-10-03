@@ -13,7 +13,7 @@ install:
   - sudo dpkg -i devkitpro-pacman.deb
   - sudo dkp-pacman -Sy
   - sudo dkp-pacman -Syu
-  - sudo dkp-pacman -S -v --noconfirm devkitARM
+  - sudo dkp-pacman -S -v --noconfirm devkitARM gba-tools
   - export DEVKITPRO=/opt/devkitpro
   - export DEVKITARM=${DEVKITPRO}/devkitARM
   - travis_retry git clone https://github.com/pret/agbcc.git
