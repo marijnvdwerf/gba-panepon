@@ -24,123 +24,208 @@ Aob_Panel_Ready_01:
     .align 2, 0
     .global Aob_Panel_Ready_02
 Aob_Panel_Ready_02:
-    baserom 0x848, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xF238
+    .2byte 0x4008, 0x0000, 0xF23A
 
+    .align 2
     .global Aob_Panel_Ready_03
 Aob_Panel_Ready_03:
-    baserom 0x858, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xF23C
+    .2byte 0x4008, 0x0000, 0xF23E
 
+    .align 2
     .global Aob_Panel_TryAgain_00
 Aob_Panel_TryAgain_00:
-    baserom 0x868, 0x1C
+    .2byte 4
+    .2byte 0x4000, 0x4000, 0xF240
+    .2byte 0x4000, 0x4020, 0xF244
+    .2byte 0x4008, 0x4000, 0xF248
+    .2byte 0x4008, 0x4020, 0xF24C
 
+    .align 2
     .global Aob_Panel_TryAgain_01
 Aob_Panel_TryAgain_01:
-    baserom 0x884, 0x1C
+    .2byte 4
+    .2byte 0x4000, 0x0000, 0xF250
+    .2byte 0x0000, 0x0010, 0xF252
+    .2byte 0x4008, 0x0000, 0xF253
+    .2byte 0x0008, 0x0010, 0xF255
 
+    .align 2
     .global Aob_Panel_TryAgain_02
 Aob_Panel_TryAgain_02:
-    baserom 0x8A0, 0x1C
+    .2byte 4
+    .2byte 0x4000, 0x0000, 0xF256
+    .2byte 0x0000, 0x0010, 0xF258
+    .2byte 0x4008, 0x0000, 0xF259
+    .2byte 0x0008, 0x0010, 0xF25B
 
+    .align 2
     .global Aob_Panel_TryAgain_03
 Aob_Panel_TryAgain_03:
-    baserom 0x8BC, 0x1C
+    .2byte 4
+    .2byte 0x4000, 0x0000, 0xF25C
+    .2byte 0x4008, 0x2000, 0xF25C
+    .2byte 0x4000, 0x1010, 0xF25C
+    .2byte 0x4008, 0x3010, 0xF25C
 
+    .align 2
     .global Aob_Panel_TryAgain_04
 Aob_Panel_TryAgain_04:
-    baserom 0x8D8, 0x10
+    .2byte 2
+    .2byte 0x0000, 0x0000, 0xF260
+    .2byte 0x0000, 0x1008, 0xF260
 
+    .align 2
     .global Aob_Panel_TryAgain_05
 Aob_Panel_TryAgain_05:
-    baserom 0x8E8, 0x10
+    .2byte 2
+    .2byte 0x0000, 0x2000, 0xF260
+    .2byte 0x0000, 0x3008, 0xF260
 
+    .align 2
     .global Aob_Panel_TryAgain_06
 Aob_Panel_TryAgain_06:
-    baserom 0x8F8, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x4000, 0xF261
+    .2byte 0x4000, 0x0020, 0xF265
 
+    .align 2
     .global Aob_Panel_TryAgain_07
 Aob_Panel_TryAgain_07:
-    baserom 0x908, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x41D0, 0xF2F4
+    .2byte 0x4000, 0x01F0, 0xF2F8
 
+    .align 2
     .global Aob_Panel_Chain_00
 Aob_Panel_Chain_00:
-    baserom 0x918, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xB598
+    .2byte 0x4008, 0x0000, 0xB59A
 
+    .align 2
     .global Aob_Panel_Chain_01
 Aob_Panel_Chain_01:
-    baserom 0x928, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xB59C
+    .2byte 0x4008, 0x0000, 0xB59E
 
+    .align 2
     .global Aob_Panel_Chain_02
 Aob_Panel_Chain_02:
-    baserom 0x938, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xB5A0
+    .2byte 0x4008, 0x0000, 0xB5A2
 
+    .align 2
     .global Aob_Panel_Chain_03
 Aob_Panel_Chain_03:
-    baserom 0x948, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xB5A4
+    .2byte 0x4008, 0x0000, 0xB5A6
 
+    .align 2
     .global Aob_Panel_Chain_04
 Aob_Panel_Chain_04:
-    baserom 0x958, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xB5A8
+    .2byte 0x4008, 0x0000, 0xB5AA
 
+    .align 2
     .global Aob_Panel_Chain_05
 Aob_Panel_Chain_05:
-    baserom 0x968, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xB5AC
+    .2byte 0x4008, 0x0000, 0xB5AE
 
+    .align 2
     .global Aob_Panel_Chain_06
 Aob_Panel_Chain_06:
-    baserom 0x978, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xB5B0
+    .2byte 0x4008, 0x0000, 0xB5B2
 
+    .align 2
     .global Aob_Panel_Chain_07
 Aob_Panel_Chain_07:
-    baserom 0x988, 0x10
+    .2byte 2
+    .2byte 0x4000, 0x0000, 0xB5B4
+    .2byte 0x4008, 0x0000, 0xB5B6
 
+    .align 2
     .global Aob_Panel_Select_00
 Aob_Panel_Select_00:
-    baserom 0x998, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x0000, 0x7267
 
+    .align 2
     .global Aob_Panel_Select_01
 Aob_Panel_Select_01:
-    baserom 0x9A0, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x0000, 0x7268
 
+    .align 2
     .global Aob_Panel_Select_02
 Aob_Panel_Select_02:
-    baserom 0x9A8, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x0000, 0x7269
 
+    .align 2
     .global Aob_Panel_Select_03
 Aob_Panel_Select_03:
-    baserom 0x9B0, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x0000, 0x726A
 
+    .align 2
     .global Aob_Panel_Select_04
 Aob_Panel_Select_04:
-    baserom 0x9B8, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x1000, 0x726A
 
+    .align 2
     .global Aob_Panel_Select_05
 Aob_Panel_Select_05:
-    baserom 0x9C0, 0x8
+    .2byte 1
+    .2byte 0x00FC, 0x01FC, 0x726B
 
+    .align 2
     .global Aob_Panel_Select_06
 Aob_Panel_Select_06:
-    baserom 0x9C8, 0x8
+    .2byte 1
+    .2byte 0x00FC, 0x01FC, 0x726C
 
+    .align 2
     .global Aob_Panel_Select_07
 Aob_Panel_Select_07:
-    baserom 0x9D0, 0x8
+    .2byte 1
+    .2byte 0x00F8, 0x41F8, 0x726D
 
+    .align 2
     .global Aob_Panel_Select_08
 Aob_Panel_Select_08:
-    baserom 0x9D8, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x0000, 0x7272
 
+    .align 2
     .global Aob_Panel_Select_09
 Aob_Panel_Select_09:
-    baserom 0x9E0, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x0000, 0x7273
 
+    .align 2
     .global Aob_Panel_Select_0a
 Aob_Panel_Select_0a:
-    baserom 0x9E8, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x0000, 0x7274
 
+    .align 2
     .global Aob_Panel_Select_0b
 Aob_Panel_Select_0b:
-    baserom 0x9F0, 0x8
+    .2byte 1
+    .2byte 0x0000, 0x0000, 0x7275
 
 #if VERSION == 0
 .include "baku.s"
