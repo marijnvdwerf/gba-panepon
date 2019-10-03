@@ -77,6 +77,9 @@ SECTIONS
 	{
 
 	    */data.s.obj(.rodata);
+	    */main.c.obj(.rodata);
+	    */nisctc.c.obj(.rodata);
+	    */data.s.obj(.rodata2);
 	    */libm4a.a:*(.rodata);
 	    */sounddata2.s.obj(.rodata);
 	    */libsound.a:*(.rodata);

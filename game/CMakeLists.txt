@@ -71,6 +71,8 @@ set(SOURCES
     src/src2.s
     src/data.c
     src/bss2.s
+    src/main.c
+    src/nisctc.c
     src/agb_start_from_arm.s
     src/sounddata.s
     src/sounddata2.s
