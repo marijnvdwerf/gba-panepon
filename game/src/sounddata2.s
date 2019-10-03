@@ -357,7 +357,7 @@ voicegroup000:
     .4byte 0x2
     .byte 0, 5, 3, 0
 
-    voice_programmable_wave_alt ProgrammableWaveData_2029448, 0, 5, 3, 0
+    voice_programmable_wave_alt triangle, 0, 5, 3, 0
     .byte 0, 60, 0, 0
     .4byte marimba_f4_e_l_13k8b
     .byte 255, 204, 0, 0
@@ -381,7 +381,7 @@ voicegroup000:
     .4byte 0x2
     .byte 0, 0, 15, 0
 
-    voice_programmable_wave_alt ProgrammableWaveData_2029458, 0, 4, 0, 0
+    voice_programmable_wave_alt guitar3, 0, 4, 0, 0
     .byte 2, 60, 0, 0
     .4byte 0x2
     .byte 0, 6, 0, 2
@@ -407,7 +407,7 @@ voicegroup000:
     .byte 0, 60, 0, 0
     .4byte pick_bass_e1_el_13k8b
     .byte 255, 204, 128, 0
-    voice_programmable_wave ProgrammableWaveData_2029468, 0, 1, 3, 2
+    voice_programmable_wave square, 0, 1, 3, 2
     .byte 1, 60, 0, 0
     .4byte 0x2
     .byte 0, 6, 6, 2
@@ -796,21 +796,22 @@ voicegroup002:
     .4byte pupuu_5_2_13k8b
     .byte 255, 0, 255, 0
 
-    .global sinewave
+sc3w000:
 sinewave:
-    baserom 0x29438, 0x10
-
-    .global ProgrammableWaveData_2029448
-ProgrammableWaveData_2029448:
-    baserom 0x29448, 0x10
-
-    .global ProgrammableWaveData_2029458
-ProgrammableWaveData_2029458:
-    baserom 0x29458, 0x10
-
-    .global ProgrammableWaveData_2029468
-ProgrammableWaveData_2029468:
-    baserom 0x29468, 0x10
+	.byte	0x00,0x11,0x23,0x56,0x89,0xAC,0xDE,0xEF
+	.byte	0xFF,0xEE,0xDC,0xA9,0x86,0x53,0x21,0x10
+sc3w001:
+triangle:
+	.byte	0x01,0x22,0x33,0x44,0x55,0x66,0x77,0x88
+	.byte	0x99,0x87,0x66,0x55,0x44,0x33,0x22,0x10
+sc3w002:
+guitar3:
+	.byte	0x43,0x42,0x32,0x10,0x00,0x00,0x00,0x00
+	.byte	0x00,0x00,0x00,0x00,0x00,0x00,0x10,0x02
+sc3w003:
+square:
+	.byte	0x77,0x77,0x77,0x77,0x00,0x00,0x00,0x00
+	.byte	0x77,0x77,0x77,0x77,0x00,0x00,0x00,0x00
 
     .global mplay_table
 mplay_table:
@@ -936,111 +937,3 @@ song_table:
     .global dmy_song
 dmy_song:
 	.byte	0,0,0,0
-
-    .global marimba_f4_e_l_13k8b
-marimba_f4_e_l_13k8b:
-    baserom 0x29834, 0x34C
-
-    .global vibraphon_f4_e2l_13k8b
-vibraphon_f4_e2l_13k8b:
-    baserom 0x29B80, 0x870
-
-    .global guitar_c3_e4l_13k8b
-guitar_c3_e4l_13k8b:
-    baserom 0x2A3F0, 0x13AC
-
-    .global picked_bass_c2_e3l_13k8b
-picked_bass_c2_e3l_13k8b:
-    baserom 0x2B79C, 0xC4C
-
-    .global slap_bass_e4l_13k8b
-slap_bass_e4l_13k8b:
-    baserom 0x2C3E8, 0x1068
-
-    .global trumpet_f4_e1_l_13k8b
-trumpet_f4_e1_l_13k8b:
-    baserom 0x2D450, 0x648
-
-    .global clarinet_c4_el_13k8b
-clarinet_c4_el_13k8b:
-    baserom 0x2DA98, 0x764
-
-    .global square_wave_f4_13k8b
-square_wave_f4_13k8b:
-    baserom 0x2E1FC, 0xDD0
-
-    .global JP_8_square_c4_l_13k8b
-JP_8_square_c4_l_13k8b:
-    baserom 0x2EFCC, 0x100
-
-    .global pick_bass_e1_el_13k8b
-pick_bass_e1_el_13k8b:
-    baserom 0x2F0CC, 0xE2C
-
-    .global drum_kick_b_e_13k8b
-drum_kick_b_e_13k8b:
-    baserom 0x2FEF8, 0x4A8
-
-    .global drum_side_stick
-drum_side_stick:
-    baserom 0x303A0, 0x2BC
-
-    .global drum_d1_snare_13k8b
-drum_d1_snare_13k8b:
-    baserom 0x3065C, 0x8F4
-
-    .global drum_hand_clap_13k8b
-drum_hand_clap_13k8b:
-    baserom 0x30F50, 0x4E4
-
-    .global drum_hihat_e2_13k8b
-drum_hihat_e2_13k8b:
-    baserom 0x31434, 0x36C
-
-    .global drum_claves_e_13k8b
-drum_claves_e_13k8b:
-    baserom 0x317A0, 0x2B0
-
-    .global panepon_se_cursor_e1_13k8b
-panepon_se_cursor_e1_13k8b:
-    baserom 0x31A50, 0xA8
-
-    .global panepon_se_b_break_1_13k8b
-panepon_se_b_break_1_13k8b:
-    baserom 0x31AF8, 0x2A8
-
-    .global panepon_se_b_drop1_e_13k8b
-panepon_se_b_drop1_e_13k8b:
-    baserom 0x31DA0, 0x510
-
-    .global panepon_se_b_break_2_13k8b
-panepon_se_b_break_2_13k8b:
-    baserom 0x322B0, 0x3BC
-
-    .global panepon_se_break_e4_13k8b
-panepon_se_break_e4_13k8b:
-    baserom 0x3266C, 0x2F4
-
-    .global panepon_se_b_break_4_13k8b
-panepon_se_b_break_4_13k8b:
-    baserom 0x32960, 0x3FC
-
-    .global pupuri_1_13k8b
-pupuri_1_13k8b:
-    baserom 0x32D5C, 0x408
-
-    .global pupuri_2_13k8b
-pupuri_2_13k8b:
-    baserom 0x33164, 0x2E4
-
-    .global pupuri_3_13k8b
-pupuri_3_13k8b:
-    baserom 0x33448, 0x1118
-
-    .global pupuu_5_1_13k8b
-pupuu_5_1_13k8b:
-    baserom 0x34560, 0x2A8
-
-    .global pupuu_5_2_13k8b
-pupuu_5_2_13k8b:
-    baserom 0x34808, 0x8D0

@@ -19,6 +19,9 @@ install:
   - travis_retry git clone https://github.com/pret/agbcc.git
   - cd agbcc && ./build.sh
   - export AGBCC=$(pwd)
+  - travis_retry git clone https://github.com/pret/pokeruby.git
+  - cd pokeruby && ./build_tools.sh
+  - export POKERUBY=$(pwd)
   - popd
 script:
   - dd if=/dev/zero of=baserom.gba bs=256K count=1
