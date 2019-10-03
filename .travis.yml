@@ -10,5 +10,5 @@ addons:
 script:
   - mkdir -p build
   - cd build
-  - /usr/bin/cmake ..
+  - /usr/bin/cmake -DCMAKE_TOOLCHAIN_FILE=../gba.toolchain.cmake ..
   - make
