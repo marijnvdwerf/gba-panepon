@@ -9,4 +9,4 @@ set(CMAKE_C_CREATE_ASSEMBLY_SOURCE "(( ${CMD_PP} | ${CMD_C} -o - ) && echo '.tex
 
 add_library (m4a m4a_1.s m4a_2.c m4a_3.s m4a_4.c data.c)
 target_include_directories(m4a PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
-target_link_libraries(m4a  agbsyscall)
+target_link_libraries(m4a agbsyscall gba)

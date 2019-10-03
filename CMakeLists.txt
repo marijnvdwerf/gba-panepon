@@ -18,6 +18,7 @@ add_library(newlib STATIC IMPORTED)
 set_target_properties(newlib PROPERTIES IMPORTED_LOCATION "${AGBCC_DIR}/libc.a")
 target_link_libraries(newlib INTERFACE gcc)
 
+add_subdirectory(gba)
 add_subdirectory(agb)
 add_subdirectory(agbsyscall)
 add_subdirectory(m4a)
