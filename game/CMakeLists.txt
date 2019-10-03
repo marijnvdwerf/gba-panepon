@@ -41,7 +41,7 @@ function(add_rom)
     set_target_properties(${ADD_ROM_NAME} PROPERTIES LINK_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/ldscript.ld")
     add_gba_target(${ADD_ROM_NAME})
 
-    if (${ADD_ROM_SHA})
+    if (ADD_ROM_SHA)
         message("ADD_ROM_SHA: ${ADD_ROM_SHA}")
         validate_target(${ADD_ROM_NAME}.gba ${ADD_ROM_SHA})
         add_dependencies(validate validate_${ADD_ROM_NAME}.gba)
