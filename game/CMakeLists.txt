@@ -63,6 +63,7 @@ set(CMAKE_C_LINKER_WRAPPER_FLAG "")
 set(CMAKE_C_LINK_EXECUTABLE "<CMAKE_LINKER> <FLAGS> <CMAKE_C_LINK_FLAGS> <LINK_FLAGS> <OBJECTS>  -o <TARGET> <LINK_LIBRARIES>")
 
 set(JOYBOOT src/crt0_joy_boot.s)
+set(MULTIBOOT src/crt0_multi_boot.s)
 set(SOURCES
     src/dummy.s
     src/aob.s
@@ -101,4 +102,17 @@ add_rom(
         ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/res
     SHA 9e182c417233a6d09fdbb55ab136656f2bd9a3c0
+)
+
+add_rom(
+    NAME ponagb2m_multiboot
+    SOURCES ${MULTIBOOT} ${SOURCES}
+    VERSION 2
+    INCLUDE
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/res
 )
