@@ -90,12 +90,22 @@ Aob_Panel_Baku_09:
     .align 2
     .global Aob_Panel_Baku_0a
 Aob_Panel_Baku_0a:
-    baserom 0xB10, 0x1C
+    .2byte 4
+    .2byte 0x00E9, 0x01E9, 0x8604
+    .2byte 0x00E9, 0x000F, 0x8604
+    .2byte 0x000F, 0x01E9, 0x8604
+    .2byte 0x000F, 0x000F, 0x8604
 
+    .align 2
     .global Aob_Panel_Baku_0b
 Aob_Panel_Baku_0b:
-    baserom 0xB2C, 0x1C
+    .2byte 4
+    .2byte 0x00E8, 0x01E8, 0x8604
+    .2byte 0x00E8, 0x0010, 0x8604
+    .2byte 0x0010, 0x01E8, 0x8604
+    .2byte 0x0010, 0x0010, 0x8604
 
+    .align 2
     .global Aob_Panel_Baku_Ani00
 Aob_Panel_Baku_Ani00:
     .4byte Aob_Panel_Baku_00

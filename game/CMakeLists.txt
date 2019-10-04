@@ -32,16 +32,16 @@ function(add_rom)
 
     set(MAPFILE "${ADD_ROM_NAME}.map")
     add_executable(${ADD_ROM_NAME} ${ADD_ROM_SOURCES})
-    target_compile_definitions(${ADD_ROM_NAME} PRIVATE -DBASEROM=${BASEROM} -DVERSION=${ADD_ROM_VERSION})
+    target_compile_definitions(${ADD_ROM_NAME} PRIVATE -DVERSION=${ADD_ROM_VERSION})
     target_compile_options(${ADD_ROM_NAME} PRIVATE ${COMPILE_OPTIONS})
-    target_link_libraries(${ADD_ROM_NAME} PRIVATE m4a agbsyscall isagb gcc newlib sound)
+    target_link_libraries(${ADD_ROM_NAME} PRIVATE gba m4a agbsyscall isagb gcc newlib sound)
     target_link_options(${ADD_ROM_NAME} PRIVATE "LINKER:-Map=${MAPFILE}")
     target_link_options(${ADD_ROM_NAME} PRIVATE "LINKER:-T${CMAKE_CURRENT_SOURCE_DIR}/ldscript.ld")
     target_link_options(${ADD_ROM_NAME} PRIVATE "LINKER:-nostdlib")
     set_target_properties(${ADD_ROM_NAME} PROPERTIES LINK_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/ldscript.ld")
     add_gba_target(${ADD_ROM_NAME})
 
-    if (${ADD_ROM_SHA})
+    if (ADD_ROM_SHA)
         message("ADD_ROM_SHA: ${ADD_ROM_SHA}")
         validate_target(${ADD_ROM_NAME}.gba ${ADD_ROM_SHA})
         add_dependencies(validate validate_${ADD_ROM_NAME}.gba)
@@ -55,8 +55,8 @@ set(CMAKE_ASM_BASE_FLAGS ${CMAKE_ASM_FLAGS})
 set(CMD_PP "<CMAKE_C_COMPILER> <DEFINES> <INCLUDES> -I${AGBCC_INCLUDES} -nostdinc -undef -Werror -E <SOURCE>")
 set(CMD_C "${AGBCC_OLD} ${AGBCC_FLAGS} ")
 set(CMD_AS "${CMAKE_ASM_COMPILER} ${CMAKE_ASM_ARCHITECTURE_FLAGS} -x assembler")
-set(CMAKE_C_COMPILE_OBJECT "(( ${CMD_PP} | ${CMD_C} -o - ) && echo '.text\\n\\t.align\\t2, 0\\n') | ${CMD_AS} -o <OBJECT> -c -")
-set(CMAKE_C_CREATE_ASSEMBLY_SOURCE "(( ${CMD_PP} | ${CMD_C} -o - ) && echo '.text\\n\\t.align\\t2, 0\\n') > <ASSEMBLY_SOURCE>")
+set(CMAKE_C_COMPILE_OBJECT "(( ${CMD_PP} | ${CMD_C} -g -o - ) && echo '.text\\n\\t.align\\t2, 0\\n')  | ${CMD_AS} -o <OBJECT> -c -")
+set(CMAKE_C_CREATE_ASSEMBLY_SOURCE "(( ${CMD_PP} | ${CMD_C} -g -o - ) && echo '.text\\n\\t.align\\t2, 0\\n') > <ASSEMBLY_SOURCE>")
 
 
 set(CMAKE_C_LINKER_WRAPPER_FLAG "")
@@ -71,6 +71,8 @@ set(SOURCES
     src/src2.s
     src/data.c
     src/bss2.s
+    src/main.c
+    src/nisctc.c
     src/agb_start_from_arm.s
     src/sounddata.s
     src/sounddata2.s
@@ -98,4 +100,5 @@ add_rom(
         ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
         ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/res
+    SHA 9e182c417233a6d09fdbb55ab136656f2bd9a3c0
 )
