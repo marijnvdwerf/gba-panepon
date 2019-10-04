@@ -25,6 +25,9 @@
     bs np_fadr_xy_X, 0x4
     bs np_fadr_xy_Y, 0x4
     bs joy_timeout_counter, 0x4
+#if VERSION == 2
+    bs pad9, 0x8
+#endif
     bs pad8, 0x150
 #endif
     bs OamBak, 0x400
