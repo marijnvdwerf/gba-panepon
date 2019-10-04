@@ -19,6 +19,10 @@ void NisOptField_Main();
 void VBlankIntr();
 void IntrDummy();
 void GBAJoyIntr();
+#if VERSION == 2
+void sub_200C14C();
+void sub_200C03C();
+#endif
 
 #include "nis_gdat.c"
 
@@ -42,8 +46,12 @@ const s32 PutDataBgDex[10] = { // @ 181
 
 //int  MainSeqIdx; // @ 558
 typedef void (*MainSeqFunc)(void); // @ 563
-const MainSeqFunc MainSeqTable[16] = {
-    // @ 565
+const MainSeqFunc MainSeqTable[] = {
+// @ 565
+#if VERSION == 2
+    sub_200C03C,
+    sub_200C14C,
+#endif
     NisATitleInit,
     NisATitleMain0,
     NisATitleMain1,

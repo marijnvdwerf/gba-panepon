@@ -115,4 +115,5 @@ add_rom(
         ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
         ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/res
+    SHA 7678b495c9ebd520da3f85ff7fa8959f049ec84b
 )

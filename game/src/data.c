@@ -44,6 +44,9 @@ u8 NRam[0xBE8] = { 1 };
 u8 np_ojm_search_head_BCreg[0x4] = { 1 };
 u8 np_ojm_search_head_Areg[0x4] = { 1 };
 u8 b_BG3VOFS[0x4] = { 1 };
+#if VERSION == 2
+u8 pad[0xC] = { 1 };
+#endif
 u8 m4a_sound[0xFB0] = { 1 };
 u8 m4a_mplay005[0x40] = { 1 };
 u8 m4a_mplay006[0x40] = { 1 };
