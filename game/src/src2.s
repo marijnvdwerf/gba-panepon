@@ -19,6 +19,7 @@
 	.include "functions/GBAJoyIntr.s"
 	.include "functions/IntrDummy.s"
 	.include "functions/agb_start.s"
+#if VERSION < 2
 	.include "functions/np_ojt_inc.s"
 	.include "functions/np_ojt_dec.s"
 	.include "functions/mac_nbck_idxChk.s"
@@ -34,7 +35,12 @@
 	.include "functions/n_chkr.s"
 	.include "functions/n_inctime.s"
 	.include "functions/n_dectime.s"
+#endif
 	.include "functions/np_rakka_subs.s"
+#if VERSION == 2
+    .include "functions/sub_200C03C.s"
+    .include "functions/sub_200C14C.s"
+#endif
 	.include "functions/NisCtcPara_RXY_.s"
 	.include "functions/NisCtcPara_Para.s"
 	.include "functions/NisCtcPara_Init.s"
