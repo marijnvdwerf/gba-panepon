@@ -897,3 +897,17 @@ ponagb2m_title_Acg_LZ:
     .global ponagb2m_title_Asc_LZ
 ponagb2m_title_Asc_LZ:
     .incbin "ponagb2m_title.asc.lz"
+
+#if VERSION == 2
+    .global healthsafety_jp_Acl
+healthsafety_jp_Acl:
+    .incbin "healthsafety_jp.acl"
+
+    .global healthsafety_jp_Acg_LZ
+healthsafety_jp_Acg_LZ:
+    .incbin "healthsafety_jp.acg.lz"
+
+    .global healthsafety_jp_Asc_LZ
+healthsafety_jp_Asc_LZ:
+    .incbin "healthsafety_jp.asc.lz"
+#endif

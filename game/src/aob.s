@@ -237,7 +237,11 @@ Aob_Title_Obj_00:
     .2byte 3
     .2byte 0x4000, 0x8000, 0x0000
     .2byte 0x4000, 0x8020, 0x0004
+#if VERSION < 2
     .2byte 0x0000, 0x4040, 0x0008
+#else
+    .2byte 0x4000, 0x8040, 0x0008
+#endif
 
 #if VERSION >= 1
 .include "baku.s"

@@ -237,6 +237,9 @@
 	.include "functions/npgpr_TENMETU.s"
 	.include "functions/npgpr_KAOFRM.s"
 	.include "functions/npgpr_KAOKAN.s"
+#if VERSION == 2
+	.include "functions/sub_200835C.s"
+#endif
 	.include "functions/npgpr_FLOAT.s"
 	.include "functions/npgpr_OFLOAT.s"
 	.include "functions/npgpr_STTSPDLVL.s"
