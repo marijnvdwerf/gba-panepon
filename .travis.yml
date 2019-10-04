@@ -28,3 +28,4 @@ script:
   - cd build
   - /usr/bin/cmake -DCMAKE_TOOLCHAIN_FILE=../gba.toolchain.cmake ..
   - make
+  - make validate
