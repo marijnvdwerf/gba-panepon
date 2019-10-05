@@ -5,7 +5,7 @@ NisATitleMain1:
 	mov	r1, #0x0
 	bl	np_fuwafuwa_10
 	add	r1, r0, #0
-	add	r1, r1, #0x56
+	add	r1, r1, #0x6E
 	ldr	r2, .LNisATitleMain1_2 @ Aob_Title_Obj_00
 	mov	r0, #0x48
 	bl	NisCtc_PutCtc

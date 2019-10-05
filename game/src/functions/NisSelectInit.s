@@ -16,7 +16,7 @@ NisSelectInit:
 	str	r2, [sp, #0x10]
 	mov	r4, #0x0
 	str	r4, [sp, #0x14]
-	mov	r2, #0x11
+	mov	r2, #0x10
 	mov	r3, #0x3
 	bl	MDCPC_init
 	ldr	r6, .LNisSelectInit_1 + 8 @ MDCPC_BUF_Main

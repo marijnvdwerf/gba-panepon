@@ -24,6 +24,7 @@ void sub_200C14C();
 void sub_200C03C();
 #endif
 
+#include "msg_en.c"
 #include "nis_gdat.c"
 
 #include "nis_sel.c"

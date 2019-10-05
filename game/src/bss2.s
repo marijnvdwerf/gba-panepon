@@ -28,7 +28,7 @@
 #if VERSION == 2
     bs pad9, 0x8
 #endif
-    bs pad8, 0x150
+    bs pad8, 0x128
 #endif
     bs OamBak, 0x400
     bs OamIdx, 0x2

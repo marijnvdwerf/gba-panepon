@@ -62,10 +62,10 @@ NisSelectSub_ScrWrite:
 	.align	2, 0
 .LNisSelectSub_ScrWrite_7:
 	.word	SelRam
-	.word	0x600d290
+	.word	0x600d28a
 	.word	np_Msg_GameLevel_Table
 	.word	Asc_KAZU_v2_gm_logo
-	.word	0x600d318
+	.word	0x600d358
 	.word	0xffff
 	.word	ARam
 .LNisSelectSub_ScrWrite_5:
@@ -88,7 +88,7 @@ NisSelectSub_ScrWrite:
 	cmp	r0, #0
 	ble	.LNisSelectSub_ScrWrite_10	@cond_branch
 	ldr	r2, .LNisSelectSub_ScrWrite_14 + 8 @ Aob_Panel_Select_03
-	mov	r0, #0x38
+	mov	r0, #0x20
 	mov	r1, #0x50
 	bl	NisCtc_PutCtc
 .LNisSelectSub_ScrWrite_10:
@@ -131,7 +131,7 @@ NisSelectSub_ScrWrite:
 	bls	.LNisSelectSub_ScrWrite_17	@cond_branch
 	ldr	r2, .LNisSelectSub_ScrWrite_22 + 8 @ Aob_Panel_Select_03
 	mov	r0, #0x58
-	mov	r1, #0x60
+	mov	r1, #0x68
 	bl	NisCtc_PutCtc
 .LNisSelectSub_ScrWrite_17:
 	ldrb	r0, [r4, #0x7]
@@ -139,7 +139,7 @@ NisSelectSub_ScrWrite:
 	bhi	.LNisSelectSub_ScrWrite_18	@cond_branch
 	ldr	r2, .LNisSelectSub_ScrWrite_22 + 12 @ Aob_Panel_Select_04
 	mov	r0, #0x70
-	mov	r1, #0x60
+	mov	r1, #0x68
 	bl	NisCtc_PutCtc
 .LNisSelectSub_ScrWrite_18:
 	cmp	r5, #0x2
@@ -176,7 +176,7 @@ NisSelectSub_ScrWrite:
 	cmp	r0, #0
 	ble	.LNisSelectSub_ScrWrite_25	@cond_branch
 	ldr	r2, .LNisSelectSub_ScrWrite_29 + 8 @ Aob_Panel_Select_03
-	mov	r0, #0x38
+	mov	r0, #0x20
 	mov	r1, #0x50
 	bl	NisCtc_PutCtc
 .LNisSelectSub_ScrWrite_25:
@@ -219,7 +219,7 @@ NisSelectSub_ScrWrite:
 	bls	.LNisSelectSub_ScrWrite_32	@cond_branch
 	ldr	r2, .LNisSelectSub_ScrWrite_38 + 8 @ Aob_Panel_Select_03
 	mov	r0, #0x58
-	mov	r1, #0x60
+	mov	r1, #0x68
 	bl	NisCtc_PutCtc
 .LNisSelectSub_ScrWrite_32:
 	ldrb	r0, [r4, #0xa]
@@ -227,7 +227,7 @@ NisSelectSub_ScrWrite:
 	bhi	.LNisSelectSub_ScrWrite_33	@cond_branch
 	ldr	r2, .LNisSelectSub_ScrWrite_38 + 12 @ Aob_Panel_Select_04
 	mov	r0, #0x70
-	mov	r1, #0x60
+	mov	r1, #0x68
 	bl	NisCtc_PutCtc
 .LNisSelectSub_ScrWrite_33:
 	cmp	r5, #0x3

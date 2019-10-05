@@ -23,17 +23,29 @@ endfunction()
 
 function(add_rom)
     set(options OPTIONAL FAST)
-    set(oneValueArgs NAME VERSION SHA)
+    set(oneValueArgs NAME VERSION SHA LANGUAGE)
     set(multiValueArgs SOURCES INCLUDE)
     cmake_parse_arguments(ADD_ROM "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
-    list(TRANSFORM ADD_ROM_INCLUDE PREPEND "-Wa,-I")
-    set(COMPILE_OPTIONS "$<$<COMPILE_LANGUAGE:ASM>:${ADD_ROM_INCLUDE}>")
+    set(ADD_ROM_INCLUDE_ASM ${ADD_ROM_INCLUDE})
+    list(TRANSFORM ADD_ROM_INCLUDE_ASM PREPEND "-Wa,-I")
+    set(COMPILE_OPTIONS "$<$<COMPILE_LANGUAGE:ASM>:${ADD_ROM_INCLUDE_ASM}>")
+
+    if(NOT ADD_ROM_LANGUAGE)
+        set(ADD_ROM_LANGUAGE jp)
+    endif()
+
+    message("ADD_ROM_LANGUAGE: ${ADD_ROM_LANGUAGE}")
 
     set(MAPFILE "${ADD_ROM_NAME}.map")
     add_executable(${ADD_ROM_NAME} ${ADD_ROM_SOURCES})
-    target_compile_definitions(${ADD_ROM_NAME} PRIVATE -DVERSION=${ADD_ROM_VERSION})
+    target_compile_definitions(${ADD_ROM_NAME} PRIVATE -DVERSION=${ADD_ROM_VERSION} -DLANGUAGE=${ADD_ROM_LANGUAGE})
     target_compile_options(${ADD_ROM_NAME} PRIVATE ${COMPILE_OPTIONS})
+
+
+    list(TRANSFORM ADD_ROM_INCLUDE PREPEND "-iquote ")
+    list(JOIN ADD_ROM_INCLUDE " " ADD_ROM_INCLUDE)
+    set_target_properties(${ADD_ROM_NAME} PROPERTIES COMPILE_FLAGS "${ADD_ROM_INCLUDE}")
     target_link_libraries(${ADD_ROM_NAME} PRIVATE gba m4a agbsyscall isagb gcc newlib sound)
     target_link_options(${ADD_ROM_NAME} PRIVATE "LINKER:-Map=${MAPFILE}")
     target_link_options(${ADD_ROM_NAME} PRIVATE "LINKER:-T${CMAKE_CURRENT_SOURCE_DIR}/ldscript.ld")
@@ -52,7 +64,9 @@ set(AGBCC_FLAGS " -mthumb-interwork -Wimplicit -Wparentheses -Wunused -Werror -O
 
 set(CMAKE_ASM_BASE_FLAGS ${CMAKE_ASM_FLAGS})
 
-set(CMD_PP "<CMAKE_C_COMPILER> <DEFINES> <INCLUDES> -I${AGBCC_INCLUDES} -nostdinc -undef -Werror -E <SOURCE>")
+message("CMAKE_C_COMPILE_OBJECT: ${CMAKE_C_COMPILE_OBJECT}")
+
+set(CMD_PP "<CMAKE_C_COMPILER> <DEFINES> <INCLUDES> <FLAGS> -I${AGBCC_INCLUDES} -nostdinc -undef -Werror -E <SOURCE>")
 set(CMD_C "${AGBCC_OLD} ${AGBCC_FLAGS} ")
 set(CMD_AS "${CMAKE_ASM_COMPILER} ${CMAKE_ASM_ARCHITECTURE_FLAGS} -x assembler")
 set(CMAKE_C_COMPILE_OBJECT "(( ${CMD_PP} | ${CMD_C} -g -o - ) && echo '.text\\n\\t.align\\t2, 0\\n')  | ${CMD_AS} -o <OBJECT> -c -")
@@ -116,4 +130,20 @@ add_rom(
         ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/res
     SHA 7678b495c9ebd520da3f85ff7fa8959f049ec84b
+)
+
+add_rom(
+    NAME ponagb2m_en
+    SOURCES ${MULTIBOOT} ${SOURCES}
+    VERSION 2
+    LANGUAGE en
+    INCLUDE
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-en
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/res
+    SHA 8b88b1660d9a191a90845562ac2036f0459bf599
 )

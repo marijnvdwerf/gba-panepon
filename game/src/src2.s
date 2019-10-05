@@ -41,26 +41,36 @@
     .include "functions/sub_200C03C.s"
     .include "functions/sub_200C14C.s"
 #endif
+#if 0
 	.include "functions/NisCtcPara_RXY_.s"
 	.include "functions/NisCtcPara_Para.s"
 	.include "functions/NisCtcPara_Init.s"
+#endif
 	.include "functions/Obj1AllClear.s"
 	.include "functions/Obj1Clear.s"
 	.include "functions/Obj1SetBuff.s"
 	.include "functions/NisCtc_Obj1Put.s"
+#if 0
 	.include "functions/NisCtcList_SearchLink.s"
+#endif
 	.include "functions/NisCtcList_Sub_PutCtc.s"
 	.include "functions/NisCtc_PutCtc.s"
 	.include "functions/NisCtcList_Sub_PutCtc_R.s"
 	.include "functions/NisCtc_PutCtc_R.s"
+#if 0
 	.include "functions/NisCtcList_PutCtc.s"
+#endif
 	.include "functions/NisCtcList_QuickSort.s"
 	.include "functions/NisCtcList_SortPut.s"
 	.include "functions/NisCtc_Sub_CadPut.s"
+#if 0
 	.include "functions/NisCtc_CadPut.s"
 	.include "functions/NisCtcList_CadPut.s"
+#endif
 	.include "functions/NisCtc_Sub_EffPut.s"
 	.include "functions/NisCtc_EffPut.s"
+#if 0
 	.include "functions/NisCtcList_EffPut.s"
+#endif
 	.include "functions/NisCtcList_Sub_ObjHaBa.s"
 	.include "functions/JoyReboot.s"

@@ -1,46 +1,12 @@
 #include <gba/gba.h>
 
-extern u8 np_Msg_SuperDemo_00[];
-extern u8 np_Msg_SuperDemo_01[];
-extern u8 np_Msg_SuperDemo_02[];
-extern u8 np_Msg_SuperDemo_03[];
-extern u8 np_Msg_SuperDemo_04[];
-extern u8 np_Msg_SuperDemo_05[];
-extern u8 np_Msg_SuperDemo_06[];
-extern u8 np_Msg_SuperDemo_07[];
-extern u8 np_Msg_SuperDemo_08[];
-extern u8 np_Msg_SuperDemo_09[];
-extern u8 np_Msg_SuperDemo_10[];
-extern u8 np_Msg_SuperDemo_11[];
-extern u8 np_Msg_SuperDemo_12[];
-extern u8 np_Msg_SuperDemo_13[];
-extern u8 np_Msg_SuperDemo_14[];
-extern u8 np_Msg_SuperDemo_15[];
-extern u8 np_Msg_SuperDemo_16[];
-extern u8 np_Msg_SuperDemo_17[];
-extern u8 np_Msg_SuperDemo_18[];
-extern u8 np_Msg_SuperDemo_19[];
-extern u8 np_Msg_SuperDemo_20[];
-extern u8 np_Msg_SuperDemo_21[];
-extern u8 np_Msg_SuperDemo_22[];
-extern u8 np_Msg_SuperDemo_23[];
-extern u8 np_Msg_SuperDemo_24[];
-extern u8 np_Msg_SuperDemo_25[];
-extern u8 np_Msg_SuperDemo_26[];
-extern u8 np_Msg_SuperDemo_27[];
-extern u8 np_Msg_SuperDemo_28[];
-extern u8 np_Msg_SuperDemo_29[];
-extern u8 np_Msg_SuperDemo_30[];
-extern u8 np_Msg_SuperDemo_31[];
-extern u8 np_Msg_SuperDemo_32[];
-extern u8 np_Msg_SuperDemo_33[];
-extern u8 np_Msg_SuperDemo_34[];
 
-const u8 GLV_ED_Kind_[] = { // @ 16
+
+const u8 GLV_ED_Kind[] = { // @ 16
 #if VERSION < 2
-    /*0x05,*/ 0x06, 0x06
+    0x05, 0x06, 0x06
 #else
-    /*0x05,*/ 0x05, 0x06
+    0x05, 0x05, 0x06
 #endif
 };
 const u8 GLV_ED_SeriKind[3] = { // @ 28

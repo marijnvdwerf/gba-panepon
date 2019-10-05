@@ -319,7 +319,9 @@
 	.include "functions/np_zenkeshi_check.s"
 	.include "functions/np_zenkeshi_demo_hass.s"
 	.include "functions/np_zenkeshi_demo_main.s"
+#if 0
 	.include "functions/np_GameOverColorChange_Main.s"
+#endif
 	.include "functions/AS_Mascot_RndWait.s"
 	.include "functions/AS_Mascot_head_stp.s"
 	.include "functions/AS_Mascot_head_stt.s"

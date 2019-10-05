@@ -177,13 +177,13 @@ Aob_Panel_Select_02:
     .global Aob_Panel_Select_03
 Aob_Panel_Select_03:
     .2byte 1
-    .2byte 0x0000, 0x0000, 0x726A
+    .2byte 0x0000, 0x01FE, 0x726A
 
     .align 2
     .global Aob_Panel_Select_04
 Aob_Panel_Select_04:
     .2byte 1
-    .2byte 0x0000, 0x1000, 0x726A
+    .2byte 0x0000, 0x1002, 0x726A
 
     .align 2
     .global Aob_Panel_Select_05

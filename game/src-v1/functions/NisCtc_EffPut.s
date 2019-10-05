@@ -22,5 +22,5 @@ NisCtc_EffPut:
 .LNisCtc_EffPut_2:
 	.align	2, 0
 .LNisCtc_EffPut_1:
-	.word	pad8+0x128
+	.word	pad8+0x100
 	thumb_func_end NisCtc_EffPut

@@ -22,22 +22,21 @@ npgoWLD_bigchr_main:
 	ldrb	r0, [r0]
 	strh	r0, [r1]
 	ldr	r1, .LnpgoWLD_bigchr_main_3 + 16 @ b_BG2HOFS
-	ldr	r3, .LnpgoWLD_bigchr_main_3 + 20 @ 0xfffe
-	add	r0, r3, #0
+	movs	r0, #0
 	strh	r0, [r1]
 	bl	np_chk_start_key_s
 	cmp	r0, #0
 	bne	.LnpgoWLD_bigchr_main_1	@cond_branch
-	mov	r1, #0xbb
-	lsl	r1, r1, #0x4
-	add	r0, r4, r1
+	mov	r3, #0xbb
+	lsl	r3, r3, #0x4
+	add	r0, r4, r3
 	ldr	r0, [r0]
 	cmp	r0, #0
 	bne	.LnpgoWLD_bigchr_main_2	@cond_branch
 .LnpgoWLD_bigchr_main_1:
 	ldr	r1, .LnpgoWLD_bigchr_main_3 + 12 @ NRam
-	ldr	r2, .LnpgoWLD_bigchr_main_3 + 24 @ 0xbcc
-	add	r1, r1, r2
+	ldr	r0, .LnpgoWLD_bigchr_main_3 + 20 @ 0xbcc
+	add	r1, r1, r0
 	ldrb	r0, [r1]
 	add	r0, r0, #0x1
 	strb	r0, [r1]
@@ -54,6 +53,5 @@ npgoWLD_bigchr_main:
 	.word	b_BG2VOFS
 	.word	NRam
 	.word	b_BG2HOFS
-	.word	0xfffe
 	.word	0xbcc
 	thumb_func_end npgoWLD_bigchr_main

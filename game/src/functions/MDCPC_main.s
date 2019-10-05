@@ -182,8 +182,20 @@ MDCPC_main:
 .LMDCPC_main_46:
 	sub	r0, r0, #0x1
 	strh	r0, [r4, #0x16]
+	ldr	r0, .LMDCPC_main_usr
+    ldrh	r1, [r0, #0]
+    movs	r0, #128	@; 0x80
+    lsl	r0, r0, #1
+    and	r0, r1
+    cmp	r0, #0
+    beq	.LMDCPC_main_2
+    movs	r0, #0
+    strh	r0, [r4, #22]
 .LMDCPC_main_2:
 	pop	{r4, r5}
 	pop	{r0}
 	bx	r0
+	.align 2, 0
+.LMDCPC_main_usr:
+	.4byte  KeyRead_Trg
 	thumb_func_end MDCPC_main

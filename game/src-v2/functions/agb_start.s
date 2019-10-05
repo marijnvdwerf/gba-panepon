@@ -105,7 +105,6 @@ agb_start:
 	cmp	r1, r0
 	beq	.Lagb_start_6	@cond_branch
 	bl	NisMoveKabeColor_Main
-	bl	np_GameOverColorChange_Main
 .Lagb_start_6:
 	ldr	r0, .Lagb_start_11 + 76 @ MainSeqIdx
 	ldr	r0, [r0]

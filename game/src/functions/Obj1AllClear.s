@@ -1,6 +1,5 @@
 	thumb_func_start Obj1AllClear
 Obj1AllClear:
-	push	{lr}
 	add	sp, sp, #0xfffffffc
 	mov	r3, #0xa0
 	str	r3, [sp]
@@ -27,7 +26,6 @@ Obj1AllClear:
 	strh	r1, [r0]
 	ldr	r0, .LObj1AllClear_1 + 20 @ OamParaIdx
 	strh	r1, [r0]
-	bl	NisCtcPara_Init
 	ldr	r1, .LObj1AllClear_1 + 24 @ NisCtcListp
 	mov	r0, #0x0
 	str	r0, [r1]
@@ -35,8 +33,7 @@ Obj1AllClear:
 	ldr	r1, .LObj1AllClear_1 + 28 @ NisCtcListIdx
 	strh	r0, [r1]
 	add	sp, sp, #0x4
-	pop	{r0}
-	bx	r0
+	bx	lr
 .LObj1AllClear_2:
 	.align	2, 0
 .LObj1AllClear_1:
