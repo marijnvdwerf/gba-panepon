@@ -24,7 +24,25 @@ void sub_200C14C();
 void sub_200C03C();
 #endif
 
+#define JP 0
+#define EN 1
+#define DE 2
+#define FR 3
+#define ES 4
+#define IT 5
+
+#if LANGUAGE == EN
 #include "msg_en.c"
+#elif LANGUAGE == DE
+#include "msg_de.c"
+#elif LANGUAGE == FR
+#include "msg_fr.c"
+#elif LANGUAGE == ES
+#include "msg_es.c"
+#elif LANGUAGE == IT
+#include "msg_it.c"
+#endif
+
 #include "nis_gdat.c"
 
 #include "nis_sel.c"

@@ -32,7 +32,7 @@ function(add_rom)
     set(COMPILE_OPTIONS "$<$<COMPILE_LANGUAGE:ASM>:${ADD_ROM_INCLUDE_ASM}>")
 
     if(NOT ADD_ROM_LANGUAGE)
-        set(ADD_ROM_LANGUAGE jp)
+        set(ADD_ROM_LANGUAGE JP)
     endif()
 
     message("ADD_ROM_LANGUAGE: ${ADD_ROM_LANGUAGE}")
@@ -136,7 +136,7 @@ add_rom(
     NAME ponagb2m_en
     SOURCES ${MULTIBOOT} ${SOURCES}
     VERSION 2
-    LANGUAGE en
+    LANGUAGE EN
     INCLUDE
         ${CMAKE_CURRENT_SOURCE_DIR}/res-en
         ${CMAKE_CURRENT_SOURCE_DIR}/src-v2
@@ -146,4 +146,72 @@ add_rom(
         ${CMAKE_CURRENT_SOURCE_DIR}/src
         ${CMAKE_CURRENT_SOURCE_DIR}/res
     SHA 8b88b1660d9a191a90845562ac2036f0459bf599
+)
+
+add_rom(
+    NAME ponagb2m_de
+    SOURCES ${MULTIBOOT} ${SOURCES}
+    VERSION 2
+    LANGUAGE DE
+    INCLUDE
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-de
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-en
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/res
+    SHA f477d8c398ca8ceb35a11f30ce16b77267a70c25
+)
+
+add_rom(
+    NAME ponagb2m_fr
+    SOURCES ${MULTIBOOT} ${SOURCES}
+    VERSION 2
+    LANGUAGE FR
+    INCLUDE
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-fr
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-en
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/res
+    SHA b54bd23912f51b66307e1ba40b238419f02b03c0
+)
+
+add_rom(
+    NAME ponagb2m_es
+    SOURCES ${MULTIBOOT} ${SOURCES}
+    VERSION 2
+    LANGUAGE ES
+    INCLUDE
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-es
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-en
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/res
+    SHA 815bccc64048d244c1d6b98a937eb1e07da11281
+)
+
+add_rom(
+    NAME ponagb2m_it
+    SOURCES ${MULTIBOOT} ${SOURCES}
+    VERSION 2
+    LANGUAGE IT
+    INCLUDE
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-it
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-en
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v2
+        ${CMAKE_CURRENT_SOURCE_DIR}/src-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/res-v1
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${CMAKE_CURRENT_SOURCE_DIR}/res
+    SHA c702e1b043be6b3c51daab425e50c3195a81e1db
 )
