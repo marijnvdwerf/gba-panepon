@@ -22,12 +22,17 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: pret/agbcc
-          path: 'agbcc'
-      - run: cd agbcc && ./build.sh
-      - run: export AGBCC=$(pwd)
-      - run: travis_retry git clone https://github.com/pret/pokeruby.git
-      - run: cd pokeruby && ./build_tools.sh
-      - run: export POKERUBY=$(pwd)
+          path: agbcc
+      - run: ./build.sh
+        working-directory: agbcc
+
+      - uses: actions/checkout@v2
+        with:
+          repository: pret/pokeruby
+          path: pokeruby
+      - run: ./build_tools.sh
+        working-directory: pokeruby
+
 #      - run: popd
       - run: mkdir -p build
       - run: cd build
