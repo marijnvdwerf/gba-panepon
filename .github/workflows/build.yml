@@ -17,7 +17,11 @@ jobs:
 #      - run: sudo dkp-pacman -S -v --noconfirm devkitARM gba-tools
 #      - run: export DEVKITPRO=/opt/devkitpro
 #      - run: export DEVKITARM=${DEVKITPRO}/devkitARM
-      - run: pacman -S gcc
+
+      - name: "Install tools"
+        run: |
+          sudo apt-get update
+          sudo apt-get install gcc -y
 
       - uses: actions/checkout@v2
         with:
