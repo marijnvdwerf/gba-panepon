@@ -34,11 +34,11 @@ jobs:
         run: mkdir build
 
       - name: Configure CMake
-        run: cmake
-        working-directory: build
+        run: cmake ..
+        working-directory: ${{ github.workspace }}build
 
       - run: make
-        working-directory: ${{runner.workspace}}/build
+        working-directory: ${{ github.workspace }}/build
 
       - run: make validate
-        working-directory: ${{runner.workspace}}/build
+        working-directory: ${{ github.workspace }}/build
