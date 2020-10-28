@@ -19,6 +19,7 @@ jobs:
           sudo apt purge --auto-remove cmake -y
           sudo apt update
           sudo apt install snapd -y
+          sudo systemctl enable snapd
           sudo snap install core
       - run: sudo snap install cmake --classic
       - run: cmake --version
