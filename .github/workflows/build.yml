@@ -1,0 +1,30 @@
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - run: pushd $HOME
+      - run: wget https://github.com/devkitPro/pacman/releases/download/devkitpro-pacman-1.0.1/devkitpro-pacman.deb
+      - run: sudo dpkg -i devkitpro-pacman.deb
+      - run: sudo dkp-pacman -Sy
+      - run: sudo dkp-pacman -Syu
+      - run: sudo dkp-pacman -S -v --noconfirm devkitARM gba-tools
+      - run: export DEVKITPRO=/opt/devkitpro
+      - run: export DEVKITARM=${DEVKITPRO}/devkitARM
+      - run: travis_retry git clone https://github.com/pret/agbcc.git
+      - run: cd agbcc && ./build.sh
+      - run: export AGBCC=$(pwd)
+      - run: travis_retry git clone https://github.com/pret/pokeruby.git
+      - run: cd pokeruby && ./build_tools.sh
+      - run: export POKERUBY=$(pwd)
+      - run: popd
+      - run: mkdir -p build
+      - run: cd build
+      - run: /usr/bin/cmake -DCMAKE_TOOLCHAIN_FILE=../gba.toolchain.cmake ..
+      - run: make
+      - run: make validate
