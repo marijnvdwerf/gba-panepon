@@ -43,7 +43,7 @@ jobs:
         run: mkdir build
 
       - name: Configure CMake
-        run: cmake ..
+        run: cmake -DCMAKE_TOOLCHAIN_FILE=../gba.toolchain.cmake ..
         working-directory: ${{ github.workspace }}/build
         env:
           POKERUBY: ${{ github.workspace }}/pokeruby
