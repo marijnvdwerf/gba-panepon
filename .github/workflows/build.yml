@@ -25,19 +25,19 @@ jobs:
         shell: bash
       - run: cmake --version
 
-#      - uses: actions/checkout@v2
-#        with:
-#          repository: pret/agbcc
-#          path: agbcc
-#      - run: ./build.sh
-#        working-directory: agbcc
-#
-#      - uses: actions/checkout@v2
-#        with:
-#          repository: pret/pokeruby
-#          path: pokeruby
-#      - run: ./build_tools.sh
-#        working-directory: pokeruby
+      - uses: actions/checkout@v2
+        with:
+          repository: pret/agbcc
+          path: agbcc
+      - run: ./build.sh
+        working-directory: agbcc
+
+      - uses: actions/checkout@v2
+        with:
+          repository: pret/pokeruby
+          path: pokeruby
+      - run: ./build_tools.sh
+        working-directory: pokeruby
 
       - name: Create Build Environment
         run: mkdir build
@@ -45,6 +45,9 @@ jobs:
       - name: Configure CMake
         run: cmake ..
         working-directory: ${{ github.workspace }}/build
+        env:
+          POKERUBY: ${{ github.workspace }}/pokeruby
+          AGBCC: ${{ github.workspace }}/agbcc
 
       - run: make
         working-directory: ${{ github.workspace }}/build
