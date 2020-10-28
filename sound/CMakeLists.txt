@@ -3,7 +3,7 @@ if(NOT AIF2PCM)
     message(FATAL_ERROR "'aif2pcm' not found. Did you set the pokeruby path?")
 endif()
 
-find_program (NODE NAMES node)
+find_program (NODE NAMES node nodejs)
 if(NOT NODE)
     message(FATAL_ERROR "'node' not found.")
 endif()
