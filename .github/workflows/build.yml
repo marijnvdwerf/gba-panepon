@@ -18,8 +18,10 @@ jobs:
       - run: |
           sudo apt-get install software-properties-common -y
           sudo apt-add-repository 'deb http://deb.debian.org/debian stretch-backports main'
+          sudo apt-add-repository 'deb http://deb.debian.org/debian stretch-backports-sloppy main'
           sudo apt update
-          sudo apt -t stretch-backports install cmake libarchive13 -y
+          sudo apt -t stretch-backports-sloppy install libarchive13 -y
+          sudo apt -t stretch-backports install cmake -y
         shell: bash
       - run: cmake --version
 
