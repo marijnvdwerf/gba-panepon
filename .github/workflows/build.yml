@@ -9,32 +9,32 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: cmake --version
 
       - name: "Install tools"
         run: |
           sudo apt-get update
           sudo apt-get install build-essential gcc libpng-dev -y
+      - run: cmake --version
 
-      - uses: actions/checkout@v2
-        with:
-          repository: pret/agbcc
-          path: agbcc
-      - run: ./build.sh
-        working-directory: agbcc
-
-      - uses: actions/checkout@v2
-        with:
-          repository: pret/pokeruby
-          path: pokeruby
-      - run: ./build_tools.sh
-        working-directory: pokeruby
+#      - uses: actions/checkout@v2
+#        with:
+#          repository: pret/agbcc
+#          path: agbcc
+#      - run: ./build.sh
+#        working-directory: agbcc
+#
+#      - uses: actions/checkout@v2
+#        with:
+#          repository: pret/pokeruby
+#          path: pokeruby
+#      - run: ./build_tools.sh
+#        working-directory: pokeruby
 
       - name: Create Build Environment
         run: cmake -E make_directory ${{runner.workspace}}/build
 
       - name: Configure CMake
-        run: cmake -DCMAKE_TOOLCHAIN_FILE=../gba.toolchain.cmake ..
+        run: cmake
         working-directory: ${{runner.workspace}}/build
 
       - run: make
