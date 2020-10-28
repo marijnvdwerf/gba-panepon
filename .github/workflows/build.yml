@@ -31,11 +31,11 @@ jobs:
 #        working-directory: pokeruby
 
       - name: Create Build Environment
-        run: cmake -E make_directory ${{runner.workspace}}/build
+        run: mkdir build
 
       - name: Configure CMake
         run: cmake
-        working-directory: ${{runner.workspace}}/build
+        working-directory: build
 
       - run: make
         working-directory: ${{runner.workspace}}/build
