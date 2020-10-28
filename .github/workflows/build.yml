@@ -13,7 +13,7 @@ jobs:
       - name: "Install tools"
         run: |
           sudo apt-get update
-          sudo apt-get install build-essential gcc libpng-dev -y
+          sudo apt-get install build-essential gcc libpng-dev nodejs -y
 
       - run: |
           sudo apt-get install software-properties-common -y
