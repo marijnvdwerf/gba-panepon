@@ -5,17 +5,18 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container: devkitpro/devkitarm
 
     steps:
       - uses: actions/checkout@v2
       - run: pushd $HOME
-      - run: wget https://github.com/devkitPro/pacman/releases/download/devkitpro-pacman-1.0.1/devkitpro-pacman.deb
-      - run: sudo dpkg -i devkitpro-pacman.deb
-      - run: sudo dkp-pacman -Sy
-      - run: sudo dkp-pacman -Syu
-      - run: sudo dkp-pacman -S -v --noconfirm devkitARM gba-tools
-      - run: export DEVKITPRO=/opt/devkitpro
-      - run: export DEVKITARM=${DEVKITPRO}/devkitARM
+#      - run: wget https://github.com/devkitPro/pacman/releases/download/devkitpro-pacman-1.0.1/devkitpro-pacman.deb
+#      - run: sudo dpkg -i devkitpro-pacman.deb
+#      - run: sudo dkp-pacman -Sy
+#      - run: sudo dkp-pacman -Syu
+#      - run: sudo dkp-pacman -S -v --noconfirm devkitARM gba-tools
+#      - run: export DEVKITPRO=/opt/devkitpro
+#      - run: export DEVKITARM=${DEVKITPRO}/devkitARM
       - run: travis_retry git clone https://github.com/pret/agbcc.git
       - run: cd agbcc && ./build.sh
       - run: export AGBCC=$(pwd)
