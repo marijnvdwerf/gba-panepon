@@ -17,7 +17,11 @@ jobs:
 #      - run: sudo dkp-pacman -S -v --noconfirm devkitARM gba-tools
 #      - run: export DEVKITPRO=/opt/devkitpro
 #      - run: export DEVKITARM=${DEVKITPRO}/devkitARM
-      - run: travis_retry git clone https://github.com/pret/agbcc.git
+
+      - uses: actions/checkout@v2
+        with:
+          repository: pret/agbcc
+          path: 'agbcc'
       - run: cd agbcc && ./build.sh
       - run: export AGBCC=$(pwd)
       - run: travis_retry git clone https://github.com/pret/pokeruby.git
