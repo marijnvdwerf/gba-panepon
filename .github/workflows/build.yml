@@ -17,6 +17,7 @@ jobs:
 #      - run: sudo dkp-pacman -S -v --noconfirm devkitARM gba-tools
 #      - run: export DEVKITPRO=/opt/devkitpro
 #      - run: export DEVKITARM=${DEVKITPRO}/devkitARM
+      - run: pacman -S gcc
 
       - uses: actions/checkout@v2
         with:
