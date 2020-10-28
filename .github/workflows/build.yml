@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: pushd $HOME
+#      - run: pushd $HOME
 #      - run: wget https://github.com/devkitPro/pacman/releases/download/devkitpro-pacman-1.0.1/devkitpro-pacman.deb
 #      - run: sudo dpkg -i devkitpro-pacman.deb
 #      - run: sudo dkp-pacman -Sy
@@ -27,7 +27,7 @@ jobs:
       - run: travis_retry git clone https://github.com/pret/pokeruby.git
       - run: cd pokeruby && ./build_tools.sh
       - run: export POKERUBY=$(pwd)
-      - run: popd
+#      - run: popd
       - run: mkdir -p build
       - run: cd build
       - run: /usr/bin/cmake -DCMAKE_TOOLCHAIN_FILE=../gba.toolchain.cmake ..
