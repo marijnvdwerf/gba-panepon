@@ -5,7 +5,6 @@ function(add_gba_target target)
             OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${target_we}.gba
             COMMAND ${OBJCOPY} -O binary $<TARGET_FILE:${target}> ${CMAKE_CURRENT_BINARY_DIR}/${target_we}.gba
             COMMAND ${GBAFIX} ${CMAKE_CURRENT_BINARY_DIR}/${target_we}.gba "-tGC-GBA Probe"
-            COMMAND xxd ${CMAKE_CURRENT_BINARY_DIR}/${target_we}.gba > ${CMAKE_CURRENT_BINARY_DIR}/${target_we}.gba.txt
             DEPENDS ${target}
     )
 
